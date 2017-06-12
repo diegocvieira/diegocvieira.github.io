@@ -1,0 +1,159 @@
+html, body{height: 100% !important;}
+.geral{position: relative; text-align: center; z-index: 1; width: 100%;}
+
+/*HEADER*/
+nav{background-color: transparent !important; border: none !important; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; font-weight: bold;}
+ul{margin-right: 10px !important;}
+nav a{color: #c9c7c7 !important;}
+nav a:hover, .menu-selecionado{color: #fff !important;}
+nav img{margin-left: 10px;}
+.mostrar-fundo-header{background-color: #333 !important; border-bottom: 1px solid #000 !important;}
+
+/*----------BANNER----------*/
+#index{position: relative; height: 100%; text-align: center; background: url(images/banner.jpeg) center / cover no-repeat fixed;}
+#index .container{top: 50%; color: #fff; position: relative;}
+
+/*TITULO DE CADA SECAO*/
+.title{font-size: 3rem; color: #fff}
+.title h1{margin: 0;}
+.title .icon{position: relative;}
+.title hr{border: 1px solid #fff; width: 90%}
+.title .fa{position: absolute; background-color: #f1f1f1; width: 60px; left: 50%; margin-left: -30px; top: -15px;}
+#about .title .fa{background-color: #2c3e50 !important;}
+#skills .title, #contact .title{color: #000;}
+#skills .title hr, #contact .title hr{border-color: #000;}
+#projects .title .fa{background-color: #222222 !important;}
+#contact .title .fa{background-color: #fff !important;}
+
+/*SOBRE MIM*/
+#about{background-color: #2c3e50}
+#about .info{float: left; font-size: 1.5rem; width: 100%; position: relative; margin-top: 20px;}
+#about .info li{list-style: none; background-color: rgba(0,0,0,.75); margin-top: 5px; color: #fff; border-radius: 5px;}
+#about .info li i{width: 30px; font-size: 2rem; background: rgb(238,238,238); color: #000; padding: 3px 0;}
+#about .info .coluna:first-child li i{margin-right: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+#about .info .coluna:nth-child(2) li i{margin-left: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+#about .info .coluna:first-child li{float: right;}/*NOME E ESCOLA*/
+#about .info .coluna:nth-child(2) li{float: left;}/*CURSO E CIDADE*/
+#about .info .coluna:first-child .linha:first-child li{padding-right: 65px;}/*NOME*/
+#about .info .coluna:first-child .linha:last-child li{padding-right: 80px; margin-top: 40px}/*ESCOLA*/
+#about .info .coluna:nth-child(2) .linha:first-child li{padding-left: 80px; margin-top: 40px;}/*CIDADE*/
+#about .info .coluna:nth-child(2) .linha:last-child li{padding-left: 70px; margin-top: 45px}/*CURSO*/
+#about .info .linha{float: left; width: 100%;}
+#about .info .coluna{width: 50%; float: left;}
+#about .info .foto{background-image: url(images/eu.jpg); background-position: -15px -13px; border-radius: 50%; position: absolute; width: 150px; height: 150px; left: 50%; top: 0; margin-left: -75px;}
+#about p{float: left; width: 60%; margin: 50px 0 0 20%; color: #fff; font-size: 2rem; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+/*----------SKILLS----------*/
+
+#skills {
+    background-color: #f1f1f1;
+}
+
+#projects {
+    background-color: #222222;
+}
+
+section {
+    float: left;
+    width: 100%;
+    padding: 60px 0 30px 0;
+}
+
+#projects img, #skills img {
+    border-radius: 5px;
+    border: 5px solid #fff;
+}
+
+#projects .item, #skills .item {
+    width: auto;
+    margin: 10px 25px 0 25px;
+    display: inline-block;
+    box-shadow: 4px 4px 7px #333;
+}
+
+.img-thumb {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-thumb::after, .img-thumb::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.img-thumb::after {
+    left: -50%;
+}
+.img-thumb::before {
+    right: -50%;
+}
+.img-thumb:hover:after {
+    left: 0;
+}
+.img-thumb:hover:before {
+    right: 0;
+}
+.thumb {
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 2px;
+    width: 80%;
+    left: 10%;
+    top: -100%;
+    z-index: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+.img-thumb:hover .thumb {
+    top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTATO*/
+#contact .email{display: block; margin-top: 120px; font-size: 2rem;}
+#contact .email p{display: block;}
+#contact .email a:hover{color: #337ab1;}
+#contact .social-network{display: block; top: 50px; position: relative;}
+#contact .social-network a{display: inline-block; border: 2px solid grey; -webkit-transform: rotate(45deg); transform: rotate(45deg); width: 60px; height: 60px; margin-left: 50px; font-size: 4rem;}
+#contact .social-network a:first-child{margin-left: 0;}
+#contact .social-network a i{margin-top: 5px; color: grey; -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+#contact .social-network a:hover .fa-facebook{color: #3b5998;}
+#contact .social-network a:hover .fa-twitter{color: #2aa9e0;}
+#contact .social-network a:hover .fa-github, #contact .social-network a:hover .fa-codepen, #contact .social-network a:hover .fa-linkedin{color: #000;}
+
+/*FOOTER*/
+footer{background-color: #000; height: 50px; width: 100%; clear: both; color: #fff; text-align: center;}
+footer p{top: 15px; position: relative;}
+footer a:hover{color: #337ab1;}
