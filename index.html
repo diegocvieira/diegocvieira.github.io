@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            @import url(estilo.css);
-        </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        <link rel="stylesheet" href="estilo.css">
         <meta charset="utf-8">
         <title>Diego Vieira - Desenvolvedor WEB</title>
         <meta content="Desenvolvedor WEB Full Stack" name="description">
@@ -34,11 +32,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bar1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#index" class="index">Início</a></li>
+                        <li class="active"><a href="#index">Início</a></li>
                         <li><a href="#about">Sobre mim</a></li>
-                        <li><a href="#skills" class="skills">Conhecimentos</a></li>
-                        <li><a href="#projects" class="projects">Projetos</a></li>
-                        <li><a href="#contact" class="contact">Contato</a></li>
+                        <li><a href="#skills">Conhecimentos</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
             </nav>
@@ -57,19 +55,45 @@
 
                 <div class="info">
                     <div class="coluna">
-                        <div class="linha"><li><i class="fa fa-user" aria-hidden="true"></i><span>Diego Conceição Vieira</span></li></div>
-                        <div class="linha"><li><i class="fa fa-university" aria-hidden="true"></i><span>Instituto Federal Sul-rio-grandense</span></li></div>
+                        <div class="linha">
+                            <li>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>Diego Conceição Vieira</span>
+                            </li>
+                        </div>
+
+                        <div class="linha">
+                            <li>
+                                <i class="fa fa-university" aria-hidden="true"></i>
+                                <span>Instituto Federal Sul-rio-grandense</span>
+                            </li>
+                        </div>
                     </div>
 
                     <div class="coluna">
-                        <div class="linha"><li><span>Pelotas - Rio Grande do Sul</span><i class="fa fa-map-marker" aria-hidden="true"></i></li></div>
-                        <div class="linha"><li><span>Tecnologia em Sistemas para Internet</span><i class="fa fa-graduation-cap" aria-hidden="true"></i></li></div>
+                        <div class="linha">
+                            <li>
+                                <span>Pelotas - Rio Grande do Sul</span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </li>
+                        </div>
+
+                        <div class="linha">
+                            <li>
+                                <span>Tecnologia em Sistemas para Internet</span>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </li>
+                        </div>
                     </div>
 
                     <div class="foto"></div>
                 </div>
 
-                <p>Olá, meu nome é Diego Conceição Vieira, sou estudante de Tecnologia em Sistemas para Internet no Instituto Federal Sul-rio-grandense (IFSUL), como sou apaixonado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aperfeiçoar meus conhecimentos e aplicá-los em cada projeto em que trabalho, sempre seguindo conceitos avançados e modernos. Estou em busca de novas experiências para aprofundar e adquirir conhecimentos. Logo abaixo estão listadas as tecnologias que utilizo em meus projetos.</p>
+                <p>Olá, meu nome é Diego Conceição Vieira, sou estudante de Tecnologia em Sistemas para Internet no Instituto Federal Sul-rio-grandense (IFSUL), como sou apaixonado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aperfeiçoar meus conhecimentos e aplicá-los em cada projeto em que trabalho, sempre seguindo conceitos avançados e modernos. Também possuo um nível de inglês intermediário. Estou em busca de novas experiências para aprofundar e adquirir conhecimentos.<br>Logo abaixo estão listadas as tecnologias e ferramentas que utilizo em meus projetos.</p>
+
+                <div class="curriculo">
+                    <a href="#" target="_blank">Download currículo</a>
+                </div>
             </section>
 
             <section id="skills">
@@ -81,37 +105,62 @@
                     </div>
                 </div>
 
+                <div class="item remove-space">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/html.png" class="img-responsive"/>
+                    <span>Html</span>
+                </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/html.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/css.png" class="img-responsive"/>
+                    <span>Css</span>
                 </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/css.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/bootstrap.png" class="img-responsive"/>
+                    <span>Bootstrap</span>
                 </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/js.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/js.png" class="img-responsive"/>
+                    <span>JavaScript</span>
                 </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/php.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/jquery.png" class="img-responsive"/>
+                    <span>Jquery</span>
                 </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/sql.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/ajax.png" class="img-responsive"/>
+                    <span>Ajax</span>
                 </div>
+
                 <div class="item">
-                    <img src="http://ap.imagensbrasil.org/images/2017/03/19/ps.png" class="img-responsive">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/php.png" class="img-responsive"/>
+                    <span>Php</span>
                 </div>
-                <div class="item" alt="Conhecimento em Inglês">
-                    <div class="img-thumb">
-                        <img src="http://ap.imagensbrasil.org/images/2017/03/19/english.png" class="img-responsive">
-                        <div class="thumb">Escrita e fala - Básico<br>Leitura - Médio<br>Cursando Englishtown</div>
-                    </div>
+
+                <div class="item">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/mysql.png" class="img-responsive"/>
+                    <span>Mysql</span>
                 </div>
-                <div class="item" alt="Conhecimento em Hardware">
-                    <div class="img-thumb">
-                        <img src="http://ap.imagensbrasil.org/images/2017/03/19/hardware.png" class="img-responsive">
-                        <div class="thumb">Curso de manutenção de computadores - Gigabyte</div>
-                    </div>
+
+                <div class="item">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/postgresql.png" class="img-responsive"/>
+                    <span>PostreSql</span>
                 </div>
-            </section>
+
+                <div class="item">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/git.png" class="img-responsive"/>
+                    <span>Git</span>
+                </div>
+
+                <div class="item">
+                    <img src="http://ap.imagensbrasil.org/images/2017/06/13/photoshop.png" class="img-responsive"/>
+                    <span>Photoshop</span>
+                </div>
+
+                </section>
 
             <section id="projects">
                 <div class="title">
@@ -124,13 +173,14 @@
 
                 <a href="http://codepen.io/diegovieira/pen/GWmbod" class="item" alt="Tributo a Steve Jobs">
                     <div class="img-thumb">
-                        <img src="images/projeto_steve.jpg" class="img-responsive">
+                        <img src="http://ap.imagensbrasil.org/images/2017/06/12/steve-jobs.jpg" class="img-responsive">
                         <div class="thumb"><b>Tributo a Steve Jobs</b><br>Página que conta um pouco da história de Steve Jobs, desenvolvida para um desafio do Free Code Camp.</div>
                     </div>
                 </a>
+
                 <a href="http://insidetv.net.br" class="item" alt="InsideTv">
                     <div class="img-thumb">
-                        <img src="images/insidetv.jpg" class="img-responsive">
+                        <img src="http://ap.imagensbrasil.org/images/2017/06/12/insidetv.jpg" class="img-responsive">
                         <div class="thumb"><b>InsideTv</b><br>Rede Social que une a interação entre os usuários com o gerenciamento de séries de televisão.</div>
                     </div>
                 </a>
@@ -150,11 +200,11 @@
                         <i class="fa fa-github" title="GitHub" aria-hidden="true"></i>
                     </a>
 
-                    <a href="https://codepen.io/diegovieira/">
+                    <a href="https://codepen.io/diegovieira">
                         <i class="fa fa-codepen" title="Code Pen" aria-hidden="true"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/diegocvieira/">
+                    <a href="https://www.linkedin.com/in/diegocvieira">
                         <i class="fa fa-linkedin" title="LinkedIn" aria-hidden="true"></i>
                     </a>
 
@@ -165,6 +215,10 @@
                     <a href="https://twitter.com/diego_cvieira">
                         <i class="fa fa-twitter" title="Twitter" aria-hidden="true"></i>
                     </a>
+
+                    <a href="https://www.instagram.com/vieiracdiego">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
 
                 <div class="email">
@@ -172,25 +226,62 @@
                     <p><a href="mailto:diegovc10@hotmail.com">diegovc10@hotmail.com</a></p>
                 </div>
 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435161.876276804!2d-52.59154908111679!3d-31.559787612613487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95104876f10dfe49%3A0x18cd959725e0398b!2sPelotas+-+RS!5e0!3m2!1spt-PT!2sbr!4v1497362668575"></iframe>
             </section>
         </div>
         <footer>
             <p>© Copyright 2017 - Desenvolvido por <a href="https://diegocvieira.github.io/">Diego Vieira</a></p>
         </footer>
         <script>
+                $(document).on("scroll", onScroll);
+                $('.navbar-nav a[href^="#"]').on('click', function(e)
+                {
+                    e.preventDefault();
+                    $(document).off("scroll");
+
+                    var target = this.hash;
+                    $target = $(target);
+
+                    $('.navbar-nav li').removeClass('active');
+                    $(this).parent().addClass('active');
+
+                    $('html, body').stop().animate(
+                    {
+                        'scrollTop':  ($target.offset().top) - 50
+                    }, 900, 'swing', function()
+                    {
+                        window.location.hash = target;
+                    });
+                });
+
+            function onScroll()
+            {
+                var scrollPos = $(document).scrollTop() + 60;
+
+                $('.navbar-nav a[href^="#"]').each(function()
+                {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+
+                    if(scrollPos >= refElement.position().top && scrollPos < refElement.position().top + refElement.height())
+                    {
+                        $('.navbar-nav li').removeClass("active");
+                        currLink.parent().addClass("active");
+                    }
+                });
+            }
+
             $(document).ready(function()
             {
                 if($(window).width() < 767)
                     $("nav").addClass("mostrar-fundo-header");
 
-                $("nav .index").addClass("menu-selecionado");
-
-                if($(window).scrollTop() > 10)
+                if($(window).scrollTop() > 300)
                     $("nav").addClass("mostrar-fundo-header");
 
                 $(window).resize(function()
                 {
-                    if($(window).width() < 767 || $(window).width() > 767 && $(window).scrollTop() > 10)
+                    if($(window).width() < 767 || $(window).width() > 767 && $(window).scrollTop() > 300)
                         $("nav").addClass("mostrar-fundo-header");
 
                     else
@@ -199,48 +290,11 @@
 
                 $(window).scroll(function()
                 {
-                    if($(window).scrollTop() > 10)
+                    if($(window).scrollTop() > 300)
                         $("nav").addClass("mostrar-fundo-header");
 
-                    else if($(window).scrollTop() <= 10 && $(window).width() > 767)
+                    else if($(window).scrollTop() <= 300 && $(window).width() > 767)
                         $("nav").removeClass("mostrar-fundo-header");
-
-                    if($(window).scrollTop() < 250)
-                    {
-                        $("nav a").removeClass("menu-selecionado");
-                        $("nav .index").addClass("menu-selecionado");
-                    }
-
-                    if($(window).scrollTop() > 350)
-                    {
-                        $("nav a").removeClass("menu-selecionado");
-                        $("nav .skills").addClass("menu-selecionado");
-                    }
-
-                    if($(window).scrollTop() > 850)
-                    {
-                        $("nav a").removeClass("menu-selecionado");
-                        $("nav .projects").addClass("menu-selecionado");
-                    }
-
-                    if($(window).scrollTop() > 1500)
-                    {
-                        $('nav a').removeClass('menu-selecionado');
-                        $('nav .contact').addClass('menu-selecionado');
-                    }
-                });
-            });
-
-            $(window).load(function()
-            {
-                $('nav a').click(function()
-                {
-                    $('html, body').animate(
-                    {
-                        scrollTop: $($.attr(this, "href")).offset().top
-                    }, 500);
-
-                    return false;
                 });
             });
         </script>
