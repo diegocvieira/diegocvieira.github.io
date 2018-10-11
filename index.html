@@ -1,396 +1,463 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
-        <title>Diego Vieira - Desenvolvedor Web</title>
-        <meta content="Desenvolvedor WEB Full Stack" name="description">
+        <title>Diego Vieira - Full Stack Web Developer</title>
+        <meta content="Diego Vieira - Full Stack Web Developer" name="description">
         <meta name="robots" content="index, follow">
         <link rel="icon" href="images/icon.ico">
     </head>
     <body>
         <header>
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar1">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="/"><img src="images/logo.png"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bar1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#index">Início</a></li>
-                        <li><a href="#sobre">Sobre mim</a></li>
-                        <li><a href="#conhecimentos">Conhecimentos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a href="/"><img id="logo" src="images/logo.png" alt="Diego Vieira" /></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="active" href="#inicio">INÍCIO</a></li>
+                            <li><a href="#sobre">SOBRE</a></li>
+                            <li><a href="#conhecimentos">CONHECIMENTOS</a></li>
+                            <li><a href="#projetos">PROJETOS</a></li>
+                            <li><a href="#contatos">CONTATOS</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
 
-        <section id="index">
+        <section id="inicio"></section>
+
+        <section id="sobre" class="even">
             <div class="container">
-                <h1>Diego Vieira</h1>
-                <h2>Desenvolvedor Web Full Stack</h2>
+                <div class="title">
+                    <h1>Sobre</h1>
+                    <p>Conheça um pouco mais sobre mim.</p>
+                </div>
+
+                <div class="text">
+                    <h3>Diego Vieira</h3>
+                    <p>Olá, meu nome é Diego Conceição Vieira, sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL).
+                         <br>Como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho, sempre seguindo conceitos avançados e modernos.
+                         <br>Estou em busca de novas experiências para aprofundar e adquirir conhecimentos.</p>
+                </div>
+
+                <div class="infos">
+                    <div class="col-md-6">
+                        <h4>
+                            <i class="fa fa-user" aria-hidden="true" title="Nome"></i>
+                            <span>Diego Conceição Vieira</span>
+                        </h4>
+
+                        <h4>
+                            <i class="fa fa-university" aria-hidden="true" title="Faculdade"></i>
+                            <span>Instituto Federal Sul-rio-grandense</span>
+                        </h4>
+
+                        <h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" title="Localização"></i>
+                            <span>Pelotas - Rio Grande do Sul</span>
+                        </h4>
+
+                        <h4>
+                            <i class="fa fa-graduation-cap" aria-hidden="true" title="Formação"></i>
+                            <span>Tecnologia em Sistemas para Internet</span>
+                        </h4>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="images/perfil.jpg" alt="Diego Vieira" />
+                    </div>
+
+                    <div class="cv">
+                        <a href="diego-vieira.pdf" target="_blank">Download currículo</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="sobre" class="container-fluid">
-            <div class="title text-center">
-                <h1>Sobre mim</h1>
-                <div class="icon">
-                    <i class="fa fa-coffee" aria-hidden="true"></i>
-                    <hr>
+        <section id="conhecimentos" class="odd">
+            <div class="container">
+                <div class="title">
+                    <h1>Conhecimentos e habilidades</h1>
+                    <p>Confira as tecnologias e habilidades que utilizo nos projetos em que trabalho.<br>Clique na imagem para obter mais informações.</p>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="info">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/html.png" class="html" alt="HTML" />
 
-                        <div class="posicao-foto">
-                            <div class="foto"></div>
+                            <div class="more-infos">
+                                <p><span>HTML 5</span>Linguagem de marcação utilizada para fazer a estruturação das páginas.</p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="linha">
-                            <h4>
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span>Diego Conceição Vieira</span>
-                            </h4>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/css.png" class="css" alt="CSS" />
+
+                            <div class="more-infos">
+                                <p><span>CSS 3</span>Linguagem de folha de estilo utilizada para fazer a estilização dos elementos visuais das páginas.</p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="linha">
-                            <h4>
-                                <i class="fa fa-university" aria-hidden="true"></i>
-                                <span>Instituto Federal Sul-rio-grandense</span>
-                            </h4>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/sass.png" alt="Sass" />
+
+                            <div class="more-infos">
+                                <p><span>Sass</span>Pré-processador CSS utilizado para aprimorar a estilização das páginas.</p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="linha">
-                            <h4>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span>Pelotas - Rio Grande do Sul</span>
-                            </h4>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/less.png" alt="Less" />
+
+                            <div class="more-infos">
+                                <p><span>Less</span>Pré-processador CSS utilizado para aprimorar a estilização das páginas.</p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="linha">
-                            <h4>
-                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                <span>Tecnologia em Sistemas para Internet</span>
-                            </h4>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/bootstrap.png" alt="Bootstrap" />
+
+                            <div class="more-infos">
+                                <p><span>Bootstrap</span>Framework front-end utilizado para aprimorar o desenvolvimento da responsividade dos sites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/materialize.png" alt="Materialize" />
+
+                            <div class="more-infos">
+                                <p><span>Materialize</span>Framework front-end utilizado para aprimorar o desenvolvimento da responsividade dos sites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/js.png" class="js" alt="JavaScript" />
+
+                            <div class="more-infos">
+                                <p><span>JavaScript</span>Linguagem de programação utilizada para manipular dinamicamente o comportamento da página, o que permite deixar o site mais interativo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/jquery.png" alt="jQuery" />
+
+                            <div class="more-infos">
+                                <p><span>jQuery</span>Biblioteca JavaScript que aprimora as funcionalidades do JavaScript, incrementando a usabilidade, a acessibilidade e o design.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/ajax.png" alt="Ajax" />
+
+                            <div class="more-infos">
+                                <p><span>Ajax</span>Tecnologia que utiliza JavaScript para fazer o carregamento do conteúdo de uma forma assíncrona, permitindo tornar as respostas das páginas mais rápidas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/php.png" alt="PHP" />
+
+                            <div class="more-infos">
+                                <p><span>PHP</span>Linguagem de programação utilizada na criação de scripts no lado do servidor, voltada especificamente para o desenvolvimento web.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/laravel.png" alt="Laravel" />
+
+                            <div class="more-infos">
+                                <p><span>Laravel</span>Framework PHP utilizado para aprimorar o desenvolvimento das aplicações, as deixando mais seguras e performáticas de forma rápida e com um código limpo e simplificado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/mysql.png" alt="MySQL" />
+
+                            <div class="more-infos">
+                                <p><span>MySQL</span>Sistema de gerenciamento de banco de dados que utiliza a linguagem SQL para inserir, acessar e gerenciar o conteúdo armazenado no banco de dados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/postgresql.png" alt="PostgreSQL" />
+
+                            <div class="more-infos">
+                                <p><span>PostgreSQL</span>Sistema de gerenciamento de banco de dados que utiliza a linguagem SQL para inserir, acessar e gerenciar o conteúdo armazenado no banco de dados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/git.png" alt="Git" />
+
+                            <div class="more-infos">
+                                <p><span>Git</span>Sistema de controle de versão de arquivos utilizado para controlar o projeto de uma forma descentralizada, permitindo guardar as versões de cada arquivo utilizado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/linux.png" alt="Linux" />
+
+                            <div class="more-infos">
+                                <p><span>Linux</span>Sistema operacional mais utilizado em servidores, devido a sua segurança e estabilidade.<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/photoshop.png" alt="Photoshop" />
+
+                            <div class="more-infos">
+                                <p><span>Photoshop</span>Programa de edição de imagens que permite tratar as imagens para que elas sejam exibidas da maneira mais adequada nas páginas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/english.png" alt="Inglês" />
+
+                            <div class="more-infos">
+                                <p><span>Inglês</span>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 text-justify">
-                    <p>Olá, meu nome é Diego Conceição Vieira, sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL), como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho, sempre seguindo conceitos avançados e modernos. Estou em busca de novas experiências para aprofundar e adquirir conhecimentos.</p>
-                </div>
-
             </div>
-
-           <!-- <div class="row">
-                <div class="col-lg-12 curriculo text-center">
-                    <a href="cv-diego-vieira.pdf" target="_blank">Download currículo</a>
-                </div>
-            </div>-->
         </section>
 
-        <!--CONHECIMENTOS-->
-        <section id="conhecimentos" class="container-fluid">
-            <div class="title text-center">
-                <h1>Conhecimentos</h1>
-                <div class="icon">
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                    <hr>
+        <section id="projetos" class="even">
+            <div class="container">
+                <div class="title">
+                    <h1>Projetos</h1>
+                    <p>Confira alguns dos projetos que já desenvolvi ou que estou desenvolvendo.<br>Clique na imagem para obter mais informações.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/infochat.png" alt="Infochat" />
+
+                            <div class="more-infos">
+                                <p><span>Infochat</span>Site para encontrar os profissionais e estabelecimentos da sua cidade.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://www.infochat.com.br" target="_blank">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/naslojas.png" alt="Naslojas" />
+
+                            <div class="more-infos">
+                                <p><span>Naslojas</span>Site para as lojas anunciarem seus produtos.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://www.naslojas.com" target="_blank">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/seusuper.jpg" alt="SeuSuper" />
+
+                            <div class="more-infos">
+                                <p><span>SeuSuper</span>Site para realizar pedidos nos supermercados da sua cidade.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://www.seusuper.com.br" target="_blank">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/insidetv.png" alt="InsideTv" />
+
+                            <div class="more-infos">
+                                <p><span>InsideTv</span>Rede Social que une a interação entre os usuários com o gerenciamento de séries de televisão.<br><br>O projeto ainda está em desenvolvimento, mas o progresso atual pode ser conferido no GitHub.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://github.com/diegocvieira/insidetv" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/liga.jpg" alt="Liga Operária" />
+
+                            <div class="more-infos">
+                                <p><span>Liga Operária</span>Site para exibir e gerenciar os convênios médicos da empresa.<br><br>O projeto ainda está em desenvolvimento, mas o progresso atual pode ser conferido no GitHub.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://github.com/diegocvieira/liga" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
+                            <img src="images/projects/megatech.jpg" alt="Megatech" />
+
+                            <div class="more-infos">
+                                <p><span>Megatech</span>Sistema para gerenciar as ordens de serviço da loja.<br><br>O projeto ainda está em desenvolvimento, mas o progresso atual pode ser conferido no GitHub.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://github.com/diegocvieira/megatech" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="row text-center">
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/html.png" class="center-block img-responsive"/>
-                    <b>Html</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/css.png" class="center-block img-responsive"/>
-                    <b>Css</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/sass.png" class="center-block img-responsive"/>
-                    <b>Sass</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/less.png" class="center-block img-responsive"/>
-                    <b>Less</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/bootstrap.png" class="center-block img-responsive"/>
-                    <b>Bootstrap</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/materialize.png" class="center-block img-responsive"/>
-                    <b>Materialize</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/js.png" class="center-block img-responsive"/>
-                    <b>JavaScript</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/jquery.png" class="center-block img-responsive"/>
-                    <b>Jquery</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/ajax.png" class="center-block img-responsive"/>
-                    <b>Ajax</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/php.png" class="center-block img-responsive"/>
-                    <b>Php</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/laravel.png" class="center-block img-responsive"/>
-                    <b>Laravel</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/mysql.png" class="center-block img-responsive"/>
-                    <b>Mysql</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/postgresql.png" class="center-block img-responsive"/>
-                    <b>PostreSql</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/git.png" class="center-block img-responsive"/>
-                    <b>Git</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/photoshop.png" class="center-block img-responsive"/>
-                    <b>Photoshop</b>
-                </div>
-
-                <div class="col-sm-2 col-xs-6">
-                    <img src="images/skills/ingles.png" class="center-block img-responsive"/>
-                    <b>Inglês</b>
-                </div>
-            </div>
-
         </section>
 
-        <!--PROJETOS-->
-        <section id="projetos" class="container-fluid">
-          <div class="title text-center">
-              <h1>Projetos</h1>
-              <div class="icon">
-                  <i class="fa fa-code" aria-hidden="true"></i>
-                  <hr>
-              </div>
-          </div>
+        <section id="contatos" class="odd">
+            <div class="container">
+                <div class="title">
+                    <h1>Contatos</h1>
+                    <p>Entre em contato para dúvidas, sugestões, orçamentos, suporte ou qualquer outra forma de informação.</p>
+                </div>
 
-          <div class="row text-center">
-              <div class="col-lg-4 col-md-6">
-                  <div class="item">
-                      <img src="images/projects/insidetv.jpg" class="img-responsive">
-                      <div class="thumb">
-                          <b>InsideTv</b><br>Rede Social que une a interação entre os usuários com o gerenciamento de séries de televisão.
-                          <div class="links">
-                              <!--<a href="insidetv/index.html" alt="InsideTv" target="_blank">
-                                  <i class="fa fa-home" aria-hidden="true"></i>
-                              </a>-->
-                              <a href="https://github.com/diegocvieira/insidetv" alt="InsideTv" target="_blank">
-                                  <i class="fa fa-github" aria-hidden="true"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <div class="row social">
+                    <div class="col-sm-2 col-sm-offset-3 col-xs-4">
+                        <a href="https://github.com/diegocvieira" target="_blank">
+                            <i class="fa fa-github" title="GitHub" aria-hidden="true"></i>
+                        </a>
+                    </div>
 
-              <div class="col-lg-4 col-md-6">
-                  <div class="item">
-                      <img src="images/projects/naslojas.jpg" class="img-responsive">
-                      <div class="thumb">
-                          <b>Naslojas.com</b><br>Site para as lojas anunciarem seus produtos.
-                          <div class="links">
-                              <a href="https://naslojas.com" alt="Naslojas.com" target="_blank">
-                                  <i class="fa fa-home" aria-hidden="true"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                    <div class="col-sm-2 col-xs-4">
+                        <a href="https://www.linkedin.com/in/diegocvieira" target="_blank">
+                            <i class="fa fa-linkedin" title="LinkedIn" aria-hidden="true"></i>
+                        </a>
+                    </div>
 
-              <div class="col-lg-4 col-md-6">
-                  <div class="item">
-                      <img src="images/projects/liga.jpg" class="img-responsive">
-                      <div class="thumb">
-                          <b>Liga Operária</b><br>Site para exibir e gerenciar os convênios médicos da empresa.
-                          <div class="links">
-                              <a href="https://github.com/diegocvieira/liga" alt="Liga Operária" target="_blank">
-                                  <i class="fa fa-github" aria-hidden="true"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                    <div class="col-sm-2 col-xs-4">
+                        <a href="https://www.facebook.com/diego.vieirac" target="_blank">
+                            <i class="fa fa-facebook" title="Facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
 
-              <div class="col-lg-4 col-md-6">
-                  <div class="item">
-                      <img src="images/projects/megatech.jpg" class="img-responsive">
-                      <div class="thumb">
-                          <b>Megatech</b><br>Sistema para gerenciar as ordens de serviço da loja.
-                          <div class="links">
-                              <a href="https://github.com/diegocvieira/megatech" alt="Megatech" target="_blank">
-                                  <i class="fa fa-github" aria-hidden="true"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <div class="email">
+                    <p>Tem uma ideia legal? Entre em contato para darmos início a esse projeto!</p>
 
-              <div class="col-lg-4 col-md-6">
-                  <div class="item">
-                      <img src="images/projects/steve-jobs.jpg" class="img-responsive">
-                      <div class="thumb">
-                          <b>Tributo a Steve Jobs</b><br>Página que conta um pouco da história de Steve Jobs. Desenvolvida para um desafio do Free Code Camp.
-                          <div class="links">
-                              <a href="http://codepen.io/diegovieira/pen/GWmbod" alt="Tributo a Steve Jobs" target="_blank">
-                                  <i class="fa fa-codepen" aria-hidden="true"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-        <!--CONTATO-->
-        <section id="contato" class="container-fluid">
-            <div class="title text-center">
-                <h1>Entre em contato</h1>
-                <div class="icon">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <hr>
+                    <a href="mailto:diegovc10@hotmail.com">diegovc10@hotmail.com</a>
                 </div>
             </div>
 
-            <div class="row rede-social text-center">
-                <div class="col-sm-2 col-sm-offset-3 col-xs-4">
-                    <a href="https://github.com/diegocvieira" target="_blank">
-                        <i class="fa fa-github" title="GitHub" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <div class="col-sm-2 col-xs-4">
-                    <a href="https://www.linkedin.com/in/diegocvieira" target="_blank">
-                        <i class="fa fa-linkedin" title="LinkedIn" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <div class="col-sm-2 col-xs-4">
-                    <a href="https://www.facebook.com/diego.vieirac" target="_blank">
-                        <i class="fa fa-facebook" title="Facebook" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="email row text-center">
-                <div class="col-lg-12">Tem uma ideia legal? Entre em contato para darmos início a esse projeto!</div>
-
-                <div class="col-lg-12"><a href="mailto:diegovc10@hotmail.com">diegovc10@hotmail.com</a></div>
-            </div>
-
-            <div class="row text-center mapa">
-                <div class="col-lg-12">
+            <div class="container-fluid">
+                <div class="map">
                     <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Atualmente estou morando em Pelotas / RS</h4>
-                </div>
 
-                <div class="col-lg-12">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435161.876276804!2d-52.59154908111679!3d-31.559787612613487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95104876f10dfe49%3A0x18cd959725e0398b!2sPelotas+-+RS!5e0!3m2!1spt-PT!2sbr!4v1497362668575"></iframe>
                 </div>
             </div>
         </section>
 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h4>© Copyright 2017 - Desenvolvido por <a href="https://diegocvieira.github.io/">Diego Vieira</a></h4>
-                </div>
-            </div>
+        <footer class="even">
+            <p>Copyright © 2017/2018 | Todos os Direitos Reservados | All Rights Reserved</p>
+            <p>Desenvolvido por <a href="https://diegocvieira.github.io">Diego Vieira</a></p>
         </footer>
+
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
         <script>
-            $('.navbar-nav a[href^="#"]').on('click', function(e){
-                e.preventDefault();
-                $(document).off("scroll");
+            $(function() {
+                $(document).scroll(function() {
+                    var scrollPos = $(document).scrollTop() + 60;
 
-                var target = this.hash;
-                $target = $(target);
+                    $('.navbar-nav a').each(function() {
+                        var currLink = $(this),
+                            refElement = $(currLink.attr('href'));
 
-                $('.navbar-nav li').removeClass('active');
-                $(this).parent().addClass('active');
-
-                $('html, body').stop().animate({
-                    'scrollTop':  ($target.offset().top) - 50
-                }, 900, 'swing', function(){
-                    window.location.hash = target;
-                });
-            });
-
-            $(window).scroll(function(){
-                var scrollPos = $(document).scrollTop() + 50;
-
-                $('.navbar-nav a[href^="#"]').each(function(){
-                    var currLink = $(this);
-                    var refElement = $(currLink.attr("href"));
-
-                    if(scrollPos >= refElement.position().top && scrollPos < refElement.position().top + refElement.height()){
-                        $('.navbar-nav li').removeClass("active");
-                        currLink.parent().addClass("active");
-                    }
-                });
-            });
-
-            $(document).ready(function(){
-                if($(window).width() < 767)
-                    $("nav").addClass("mostrar-fundo-header");
-
-                if($(window).scrollTop() > 300)
-                    $("nav").addClass("mostrar-fundo-header");
-
-                $(window).resize(function(){
-                    if($(window).width() < 767 || $(window).width() > 767 && $(window).scrollTop() > 300)
-                        $("nav").addClass("mostrar-fundo-header");
-
-                    else
-                        $('nav').removeClass('mostrar-fundo-header');
+                        if(scrollPos >= refElement.position().top && scrollPos < refElement.position().top + refElement.height()) {
+                            $('.navbar-nav a').removeClass('active');
+                            currLink.addClass('active');
+                        }
+                    });
                 });
 
-                $(window).scroll(function(){
-                    if($(window).scrollTop() > 300)
-                        $("nav").addClass("mostrar-fundo-header");
+                $('.navbar-nav a').on('click', function(e) {
+                    e.preventDefault();
 
-                    else if($(window).scrollTop() <= 300 && $(window).width() > 767)
-                        $("nav").removeClass("mostrar-fundo-header");
+                    var target = this.hash,
+                        $target = $(target);
+
+                    $('.navbar-nav a').removeClass('active');
+                    $(this).addClass('active');
+
+                    $('html, body').stop().animate({
+                        'scrollTop': ($target.offset().top) - 50
+                    }, 900, 'swing', function() {
+                        window.location.hash = target;
+                    });
                 });
             });
         </script>
