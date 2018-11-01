@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <title>Diego Vieira - Full Stack Web Developer</title>
@@ -30,8 +31,8 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="active" href="#inicio">INÍCIO</a></li>
                             <li><a href="#sobre">SOBRE</a></li>
-                            <li><a href="#conhecimentos">CONHECIMENTOS</a></li>
                             <li><a href="#projetos">PROJETOS</a></li>
+                            <li><a href="#conhecimentos">CONHECIMENTOS</a></li>
                             <li><a href="#contatos">CONTATOS</a></li>
                         </ul>
                     </div>
@@ -39,7 +40,12 @@
             </nav>
         </header>
 
-        <section id="inicio"></section>
+        <!--<section id="inicio">
+            <div class="slider">
+                <div>I am a slide.</div>
+                <div>I am another slide.</div>
+            </div>
+        </section>-->
 
         <section id="sobre" class="even">
             <div class="container">
@@ -68,13 +74,13 @@
                         </h4>
 
                         <h4>
-                            <i class="fa fa-map-marker" aria-hidden="true" title="Localização"></i>
-                            <span>Pelotas - Rio Grande do Sul</span>
+                            <i class="fa fa-graduation-cap" aria-hidden="true" title="Formação"></i>
+                            <span>Tecnologia em Sistemas para Internet</span>
                         </h4>
 
                         <h4>
-                            <i class="fa fa-graduation-cap" aria-hidden="true" title="Formação"></i>
-                            <span>Tecnologia em Sistemas para Internet</span>
+                            <i class="fa fa-map-marker" aria-hidden="true" title="Localização"></i>
+                            <span>Pelotas - Rio Grande do Sul</span>
                         </h4>
                     </div>
 
@@ -89,188 +95,7 @@
             </div>
         </section>
 
-        <section id="conhecimentos" class="odd">
-            <div class="container">
-                <div class="title">
-                    <h1>Conhecimentos e habilidades</h1>
-                    <p>Confira as tecnologias e habilidades que utilizo nos projetos em que trabalho.<br>Clique na imagem para obter mais informações.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/html.png" class="html" alt="HTML" />
-
-                            <div class="more-infos">
-                                <p><span>HTML 5</span>Linguagem de marcação utilizada para fazer a estruturação das páginas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/css.png" class="css" alt="CSS" />
-
-                            <div class="more-infos">
-                                <p><span>CSS 3</span>Linguagem de folha de estilo utilizada para fazer a estilização dos elementos visuais das páginas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/sass.png" alt="Sass" />
-
-                            <div class="more-infos">
-                                <p><span>Sass</span>Pré-processador CSS utilizado para aprimorar a estilização das páginas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/less.png" alt="Less" />
-
-                            <div class="more-infos">
-                                <p><span>Less</span>Pré-processador CSS utilizado para aprimorar a estilização das páginas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/bootstrap.png" alt="Bootstrap" />
-
-                            <div class="more-infos">
-                                <p><span>Bootstrap</span>Framework front-end utilizado para aprimorar o desenvolvimento da responsividade dos sites.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/materialize.png" alt="Materialize" />
-
-                            <div class="more-infos">
-                                <p><span>Materialize</span>Framework front-end utilizado para aprimorar o desenvolvimento da responsividade dos sites.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/js.png" class="js" alt="JavaScript" />
-
-                            <div class="more-infos">
-                                <p><span>JavaScript</span>Linguagem de programação utilizada para manipular dinamicamente o comportamento da página, o que permite deixar o site mais interativo.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/jquery.png" alt="jQuery" />
-
-                            <div class="more-infos">
-                                <p><span>jQuery</span>Biblioteca JavaScript que aprimora as funcionalidades do JavaScript, incrementando a usabilidade, a acessibilidade e o design.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/ajax.png" alt="Ajax" />
-
-                            <div class="more-infos">
-                                <p><span>Ajax</span>Tecnologia que utiliza JavaScript para fazer o carregamento do conteúdo de uma forma assíncrona, permitindo tornar as respostas das páginas mais rápidas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/php.png" alt="PHP" />
-
-                            <div class="more-infos">
-                                <p><span>PHP</span>Linguagem de programação utilizada na criação de scripts no lado do servidor, voltada especificamente para o desenvolvimento web.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/laravel.png" alt="Laravel" />
-
-                            <div class="more-infos">
-                                <p><span>Laravel</span>Framework PHP utilizado para aprimorar o desenvolvimento das aplicações, as deixando mais seguras e performáticas de forma rápida e com um código limpo e simplificado.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/mysql.png" alt="MySQL" />
-
-                            <div class="more-infos">
-                                <p><span>MySQL</span>Sistema de gerenciamento de banco de dados que utiliza a linguagem SQL para inserir, acessar e gerenciar o conteúdo armazenado no banco de dados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/postgresql.png" alt="PostgreSQL" />
-
-                            <div class="more-infos">
-                                <p><span>PostgreSQL</span>Sistema de gerenciamento de banco de dados que utiliza a linguagem SQL para inserir, acessar e gerenciar o conteúdo armazenado no banco de dados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/git.png" alt="Git" />
-
-                            <div class="more-infos">
-                                <p><span>Git</span>Sistema de controle de versão de arquivos utilizado para controlar o projeto de uma forma descentralizada, permitindo guardar as versões de cada arquivo utilizado.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/linux.png" alt="Linux" />
-
-                            <div class="more-infos">
-                                <p><span>Linux</span>Sistema operacional mais utilizado em servidores, devido a sua segurança e estabilidade.<p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/photoshop.png" alt="Photoshop" />
-
-                            <div class="more-infos">
-                                <p><span>Photoshop</span>Programa de edição de imagens que permite tratar as imagens para que elas sejam exibidas da maneira mais adequada nas páginas.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/english.png" alt="Inglês" />
-
-                            <div class="more-infos">
-                                <p><span>Inglês</span>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projetos" class="even">
+        <section id="projetos" class="odd">
             <div class="container">
                 <div class="title">
                     <h1>Projetos</h1>
@@ -377,6 +202,227 @@
             </div>
         </section>
 
+        <section id="conhecimentos" class="even">
+            <div class="container">
+                <div class="title">
+                    <h1>Conhecimentos e habilidades</h1>
+                    <p>Confira as tecnologias e habilidades que utilizo nos projetos em que trabalho.<br>Clique na imagem para obter mais informações.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/html.png" class="html" alt="HTML" />
+
+                            <div class="more-infos">
+                                <h4>HTML 5</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/css.png" class="css" alt="CSS" />
+
+                            <div class="more-infos">
+                                <h4>CSS 3</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/sass.png" alt="Sass" />
+
+                            <div class="more-infos">
+                                <h4>Sass</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/less.png" alt="Less" />
+
+                            <div class="more-infos">
+                                <h4>Less</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/bootstrap.png" alt="Bootstrap" />
+
+                            <div class="more-infos">
+                                <h4>Bootstrap</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/materialize.png" alt="Materialize" />
+
+                            <div class="more-infos">
+                                <h4>Materialize</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/ux-ui.png" alt="UX-UI" />
+
+                            <div class="more-infos">
+                                <h4>User Experience<br>User Interface</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/js.png" class="js" alt="JavaScript" />
+
+                            <div class="more-infos">
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/jquery.png" alt="jQuery" />
+
+                            <div class="more-infos">
+                                <h4>jQuery</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/ajax.png" alt="Ajax" />
+
+                            <div class="more-infos">
+                                <h4>Ajax</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/php.png" alt="PHP" />
+
+                            <div class="more-infos">
+                                <h4>PHP</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/laravel.png" alt="Laravel" />
+
+                            <div class="more-infos">
+                                <h4>Laravel</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/laravel-mix.png" alt="Laravel Mix" />
+
+                            <div class="more-infos">
+                                <h4>Laravel Mix</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/composer.png" alt="Composer" />
+
+                            <div class="more-infos">
+                                <h4>Composer</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/npm.png" alt="Npm" />
+
+                            <div class="more-infos">
+                                <h4>Npm</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/mysql.png" alt="MySQL" />
+
+                            <div class="more-infos">
+                                <h4>MySQL</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/postgresql.png" alt="PostgreSQL" />
+
+                            <div class="more-infos">
+                                <h4>PostgreSQL</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/git.png" alt="Git" />
+
+                            <div class="more-infos">
+                                <h4>Git</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/linux.png" alt="Linux" />
+
+                            <div class="more-infos">
+                                <h4>Linux</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/photoshop.png" alt="Photoshop" />
+
+                            <div class="more-infos">
+                                <h4>Photoshop</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img src="images/skills/english.png" alt="Inglês" />
+
+                            <div class="more-infos">
+                                <p><span>Inglês</span>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contatos" class="odd">
             <div class="container">
                 <div class="title">
@@ -427,9 +473,12 @@
 
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
         <script>
             $(function() {
+                $('.slider').bxSlider();
+
                 $(document).scroll(function() {
                     var scrollPos = $(document).scrollTop() + 60;
 
@@ -447,17 +496,14 @@
                 $('.navbar-nav a').on('click', function(e) {
                     e.preventDefault();
 
-                    var target = this.hash,
-                        $target = $(target);
+                    var target = $(this.hash);
 
                     $('.navbar-nav a').removeClass('active');
                     $(this).addClass('active');
 
-                    $('html, body').stop().animate({
-                        'scrollTop': ($target.offset().top) - 50
-                    }, 900, 'swing', function() {
-                        window.location.hash = target;
-                    });
+                    $('html, body').animate({
+                        'scrollTop' : (target.offset().top) - 60
+                    }, 900);
                 });
             });
         </script>
