@@ -1,130 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta charset="utf-8">
+        <title>Diego Vieira | Full Stack Web Developer</title>
+        <meta content="Diego Vieira | Full Stack Web Developer" name="description">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="images/icon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <title>Diego Vieira - Full Stack Web Developer</title>
-        <meta content="Diego Vieira - Full Stack Web Developer" name="description">
-        <meta name="robots" content="index, follow">
-        <link rel="icon" href="images/icon.ico">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
-                            <span class="sr-only"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+        <header id="inicio" class="header-shorta">
+            <video autoplay="" muted="" loop="" poster="images/bg.jpg">
+                <source src="images/bg.mp4" type="video/mp4" />
+            </video>
 
-                        <a href="/"><img id="logo" src="images/logo.png" alt="Diego Vieira" /></a>
-                    </div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar col-xs-12" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
+                                <span class="sr-only"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
 
-                    <div class="collapse navbar-collapse" id="bar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="active" href="#inicio">INÍCIO</a></li>
-                            <li><a href="#sobre">SOBRE</a></li>
-                            <li><a href="#projetos">PROJETOS</a></li>
-                            <li><a href="#conhecimentos">CONHECIMENTOS</a></li>
-                            <li><a href="#contatos">CONTATOS</a></li>
-                        </ul>
-                    </div>
+                            <div class="diego-infos">
+                                <div class="col-xs-12 text-center">
+                                    <img src="images/perfil.jpg" alt="Diego Vieira" class="logo" />
+
+                                    <h1>Diego Vieira</h1>
+
+                                    <p>Full Stack Web Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bar">
+                            <ul class="nav navbar-nav">
+                                <li class="inactive">
+                                    <a href="#sobre">SOBRE</a>
+                                </li>
+
+                                <li class="inactive">
+                                    <a href="#projetos">PROJETOS</a>
+                                </li>
+
+                                <li class="inactive">
+                                    <a href="#conhecimentos">CONHECIMENTOS</a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="#contato">CONTATO</a>
+                                </li>
+
+                                <span></span>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </header>
 
-        <!--<section id="inicio">
-            <div class="slider">
-                <div>I am a slide.</div>
-                <div>I am another slide.</div>
-            </div>
-        </section>-->
-
-        <section id="sobre" class="even">
+        <section id="sobre">
             <div class="container">
-                <div class="title">
-                    <h1>Sobre</h1>
-                    <p>Conheça um pouco mais sobre mim.</p>
+                <div class="header-title">
+                    <h2>SOBRE</h2>
+
+                    <span class="divider">
+                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                    </span>
                 </div>
 
-                <div class="text">
-                    <h3>Diego Vieira</h3>
-                    <p>Olá, meu nome é Diego Conceição Vieira, sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL).
-                         <br>Como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho, sempre seguindo conceitos avançados e modernos.
-                         <br>Estou em busca de novas experiências para aprofundar e adquirir conhecimentos.</p>
-                </div>
+                <p class="description">
+                    <b>Hello World!</b><br>Meu nome é Diego Conceição Vieira, sou desenvolvedor Web Full Stack.
+                    <br>Sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL).
+                    <br>Como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho!
+                    <br>Estou em busca de novas experiências para aprofundar e adquirir conhecimentos e assim poder desenvolver códigos mais limpos, com mais eficiência e com um ótimo UI/UX!
+                </p>
 
-                <div class="infos">
-                    <div class="col-md-6">
-                        <h4>
-                            <i class="fa fa-user" aria-hidden="true" title="Nome"></i>
-                            <span>Diego Conceição Vieira</span>
-                        </h4>
-
-                        <h4>
-                            <i class="fa fa-university" aria-hidden="true" title="Faculdade"></i>
-                            <span>Instituto Federal Sul-rio-grandense</span>
-                        </h4>
-
-                        <h4>
-                            <i class="fa fa-graduation-cap" aria-hidden="true" title="Formação"></i>
-                            <span>Tecnologia em Sistemas para Internet</span>
-                        </h4>
-
-                        <h4>
-                            <i class="fa fa-map-marker" aria-hidden="true" title="Localização"></i>
-                            <span>Pelotas - Rio Grande do Sul</span>
-                        </h4>
-                    </div>
-
-                    <div class="col-md-6">
-                        <img src="images/perfil.jpg" alt="Diego Vieira" />
-                    </div>
-
-                    <div class="cv">
-                        <a href="diego-vieira.pdf" target="_blank">Download currículo</a>
-                    </div>
+                <div class="cv">
+                    <a href="diego-vieira.pdf" target="_blank">BAIXAR CURRÍCULO</a>
                 </div>
             </div>
         </section>
 
-        <section id="projetos" class="odd">
+        <section id="projetos">
             <div class="container">
-                <div class="title">
-                    <h1>Projetos</h1>
-                    <p>Confira alguns dos projetos que já desenvolvi ou que estou desenvolvendo.<br>Clique na imagem para obter mais informações.</p>
+                <div class="header-title">
+                    <h2>PROJETOS</h2>
+
+                    <span class="divider">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </span>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="item">
-                            <img src="images/projects/infochat.png" alt="Infochat" />
-
-                            <div class="more-infos">
-                                <p><span>Infochat</span>Site para encontrar os profissionais e estabelecimentos da sua cidade.</p>
-
-                                <div class="info-bottom">
-                                    <a href="https://www.infochat.com.br" target="_blank">
-                                        <i class="fa fa-home" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="item">
                             <img src="images/projects/naslojas.png" alt="Naslojas" />
 
                             <div class="more-infos">
-                                <p><span>Naslojas</span>Site para as lojas anunciarem seus produtos.</p>
+                                <h4>Naslojas</h4>
+                                <p>Sistema para os usuários conferirem as ofertas e promoções das lojas físicas da cidade de Pelotas/RS.<br>Podendo solicitar confirmações de disponibilidade e reservar os produtos.</p>
 
                                 <div class="info-bottom">
                                     <a href="https://www.naslojas.com" target="_blank">
@@ -140,7 +123,8 @@
                             <img src="images/projects/seusuper.jpg" alt="SeuSuper" />
 
                             <div class="more-infos">
-                                <p><span>SeuSuper</span>Site para realizar pedidos nos supermercados da sua cidade.</p>
+                                <h4>SeuSuper</h4>
+                                <p>Sistema em que os usuários podem realizar pedidos nos supermercados da sua cidade e recebê-los em casa.</p>
 
                                 <div class="info-bottom">
                                     <a href="https://www.seusuper.com.br" target="_blank">
@@ -153,10 +137,28 @@
 
                     <div class="col-md-6">
                         <div class="item">
+                            <img src="images/projects/infochat.png" alt="Infochat" />
+
+                            <div class="more-infos">
+                                <h4>Infochat</h4>
+                                <p>Sistema para os usuários encontrarem informações sobre os profissionais e estabelecimentos da sua cidade.<br>Também permite a troca de mensagens entre ambas as partes.</p>
+
+                                <div class="info-bottom">
+                                    <a href="https://github.com/diegocvieira/Infochat" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item">
                             <img src="images/projects/insidetv.png" alt="InsideTv" />
 
                             <div class="more-infos">
-                                <p><span>InsideTv</span>Rede Social que une a interação entre os usuários com o gerenciamento de séries de televisão.<br><br>O projeto ainda está em desenvolvimento, mas o progresso atual pode ser conferido no GitHub.</p>
+                                <h4>InsideTv</h4>
+                                <p>Rede Social que une a interação entre os usuários com o gerenciamento de séries de televisão.<br><br>O projeto ainda está em desenvolvimento, mas o progresso atual pode ser conferido no GitHub.</p>
 
                                 <div class="info-bottom">
                                     <a href="https://github.com/diegocvieira/insidetv" target="_blank">
@@ -202,11 +204,14 @@
             </div>
         </section>
 
-        <section id="conhecimentos" class="even">
+        <section id="conhecimentos">
             <div class="container">
-                <div class="title">
-                    <h1>Conhecimentos e habilidades</h1>
-                    <p>Confira as tecnologias e habilidades que utilizo nos projetos em que trabalho.<br>Clique na imagem para obter mais informações.</p>
+                <div class="header-title">
+                    <h2>CONHECIMENTOS E HABILIDADES</h2>
+
+                    <span class="divider">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </span>
                 </div>
 
                 <div class="row">
@@ -342,6 +347,16 @@
 
                     <div class="col-sm-4 col-xs-12">
                         <div class="item">
+                            <img src="images/skills/gulp.png" alt="Gulp" />
+
+                            <div class="more-infos">
+                                <h4>Gulp</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="item">
                             <img src="images/skills/composer.png" alt="Composer" />
 
                             <div class="more-infos">
@@ -415,7 +430,8 @@
                             <img src="images/skills/english.png" alt="Inglês" />
 
                             <div class="more-infos">
-                                <p><span>Inglês</span>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
+                                <h4>Inglês</h4>
+                                <p>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
                             </div>
                         </div>
                     </div>
@@ -423,11 +439,16 @@
             </div>
         </section>
 
-        <section id="contatos" class="odd">
+        <section id="contato">
             <div class="container">
-                <div class="title">
-                    <h1>Contatos</h1>
-                    <p>Entre em contato para dúvidas, sugestões, orçamentos, suporte ou qualquer outra forma de informação.</p>
+                <div class="header-title">
+                    <h2>CONTATO</h2>
+
+                    <span class="divider">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </span>
+
+                    <p>Entre em contato para dúvidas, sugestões, orçamentos,<br>suporte ou qualquer outra forma de informação.</p>
                 </div>
 
                 <div class="row social">
@@ -451,33 +472,35 @@
                 </div>
 
                 <div class="email">
-                    <p>Tem uma ideia legal? Entre em contato para darmos início a esse projeto!</p>
+                    <p>Tem uma ideia legal?<br>Entre em contato para darmos início a esse projeto!</p>
 
                     <a href="mailto:diegovc10@hotmail.com">diegovc10@hotmail.com</a>
                 </div>
             </div>
-
-            <div class="container-fluid">
-                <div class="map">
-                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Atualmente estou morando em Pelotas / RS</h4>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435161.876276804!2d-52.59154908111679!3d-31.559787612613487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95104876f10dfe49%3A0x18cd959725e0398b!2sPelotas+-+RS!5e0!3m2!1spt-PT!2sbr!4v1497362668575"></iframe>
-                </div>
-            </div>
         </section>
 
-        <footer class="even">
-            <p>Copyright © 2017/2018 | Todos os Direitos Reservados | All Rights Reserved</p>
-            <p>Desenvolvido por <a href="https://diegocvieira.github.io">Diego Vieira</a></p>
+        <footer>
+            <div class="gotop">
+                <a href="#" class="link-gotop">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+            </div>
+
+            <p>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <b>The people who are crazy enough to think they can change the world, are the ones who do. - Steve Jobs</b>
+            </p>
+
+            <p>Copyright © 2018 | Todos os Direitos Reservados | All Rights Reserved</p>
         </footer>
 
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
         <script>
             $(function() {
-                $('.slider').bxSlider();
+                $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+                    $('.navbar-toggle:visible').click();
+                });
 
                 $(document).scroll(function() {
                     var scrollPos = $(document).scrollTop() + 60;
@@ -493,17 +516,34 @@
                     });
                 });
 
-                $('.navbar-nav a').on('click', function(e) {
+                $('.link-gotop').on('click', function(e) {
                     e.preventDefault();
 
-                    var target = $(this.hash);
+                    $('html, body').animate({
+                        'scrollTop' : 0
+                    }, 900);
+                });
 
-                    $('.navbar-nav a').removeClass('active');
-                    $(this).addClass('active');
+                $('nav a').on('click', function(e) {
+                    e.preventDefault();
+
+                    var target = $(this.hash),
+                        href = $(this).attr('href');
+
+                    $('nav li').removeClass('active').addClass('inactive');
+                    $(this).parent().removeClass('inactive').addClass('active');
 
                     $('html, body').animate({
-                        'scrollTop' : (target.offset().top) - 60
+                        'scrollTop' : href == '#inicio' ? 0 : (target.offset().top) - 60
                     }, 900);
+                });
+
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 300) {
+                        $('header').addClass('header-short');
+                    } else {
+                        $('header').removeClass('header-short');
+                    }
                 });
             });
         </script>
