@@ -19,7 +19,7 @@ header .nav span { position: absolute; bottom: -36px; display: block; width: 25%
 header .nav li, header .nav span { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; position: relative; }
 header .navbar-header { width: 100%; }
 
-.navbar-toggle { margin-right: 5px; }
+.navbar-toggle { margin: 15px 5px 0 0; }
 .navbar-toggle span { background-color: #fff; }
 .navbar-collapse[aria-expanded=true] .nav li, .navbar-collapse.collapsing .nav li { width: 100%; padding: 0 !important; }
 .navbar-collapse[aria-expanded=true] .nav a, .navbar-collapse.collapsing .nav a { padding: 15px !important; }
@@ -27,7 +27,7 @@ header .navbar-header { width: 100%; }
 .navbar-collapse[aria-expanded=true] .nav li.active { border-bottom: 5px solid #00b6ff; }
 .navbar-collapse[aria-expanded=true] .nav { margin: 0; }
 
-.header-short { position: fixed; width: 100%; z-index: 999; }
+.header-short { position: fixed; height: 60px; width: 100%; z-index: 999; }
 .header-short .container { width: 100%; }
 .header-short .nav { width: 80%; float: right !important; }
 .header-short video, .header-short p { display: none; }
@@ -94,8 +94,7 @@ footer .gotop i { display: inline-block; font-size: 2.5rem; color: #f6f6f6; }
 
 @media screen and (max-width: 765px) {
     .header-short .diego-infos { display: block; width: auto; margin-left: 10px; }
-    .header-short .navbar-header { width: 100%; }
-    .header-short .nav { width: 100%; }
+    .header-short .navbar-header, .header-short .nav { width: 100%; }
 
     section .header-title h2 { font-size: 3rem; }
 
