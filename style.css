@@ -51,7 +51,7 @@ section:nth-child(odd) .divider i { background-color: #2b2b2b; color: #f6f6f6; }
 #sobre .cv { float: left; width: 100%; margin-top: 50px; }
 #sobre .cv a { color: #13a9ef; border: 2px solid #13a9ef; padding: 15px; font-weight: bold; }
 
-.item { margin-bottom: 20px; position: relative; overflow: hidden; border-radius: 10px; height: auto; box-shadow: 5px 10px 18px #888888; }
+.item { margin-bottom: 20px; position: relative; overflow: hidden; border-radius: 10px; box-shadow: 5px 10px 18px #888888; }
 .item .more-infos p { color: #f6f6f6; font-size: 17px; }
 .item .more-infos h4 { color: #f6f6f6; font-size: 25px; font-weight: bold; margin-bottom: 5px; display: block; }
 .item::after, .item::before { content: ''; background: rgba(0,0,0,0.8); position: absolute; display: block; width: 50%; height: 100%; top: 0; overflow: hidden; -webkit-transition: 0.5s; transition: 0.5s; }
@@ -66,6 +66,7 @@ section:nth-child(odd) .divider i { background-color: #2b2b2b; color: #f6f6f6; }
 #conhecimentos .item img { width: 130px; margin-top: 38px; height: auto; }
 #conhecimentos .html, #conhecimentos .css, #conhecimentos .js { margin-top: 45px; }
 
+#projetos .col-md-6:nth-child(2n+1) { clear: left; }
 #projetos .item .more-infos { padding: 50px; }
 #projetos .more-infos .info-bottom { position: absolute; right: 20px; bottom: 20px; width: 100%; text-align: right; }
 #projetos .more-infos .info-bottom a { margin-left: 15px; }
@@ -93,7 +94,7 @@ footer .gotop i { display: inline-block; font-size: 2.5rem; color: #f6f6f6; }
 
 @media screen and (max-width: 765px) {
     .header-short .diego-infos { display: block; width: auto; margin-left: 10px; }
-    .header-short .navbar-header { width: 100%; margin-top: 6px; }
+    .header-short .navbar-header { width: 100%; }
     .header-short .nav { width: 100%; }
 
     section .header-title h2 { font-size: 3rem; }
@@ -104,4 +105,10 @@ footer .gotop i { display: inline-block; font-size: 2.5rem; color: #f6f6f6; }
 @media screen and (max-width: 765px) {
     #projetos .item .more-infos { padding: 5px; }
     #projetos .item p { font-size: 15px; }
+}
+
+@media screen and (max-width: 500px) {
+    #projetos .item h4 { margin-top: 0; }
+    #projetos .item p { font-size: 13px; }
+    #projetos .more-infos .info-bottom { bottom: 5px; }
 }
