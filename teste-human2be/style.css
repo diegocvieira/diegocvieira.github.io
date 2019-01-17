@@ -1,0 +1,666 @@
+@font-face {
+    font-family: 'Vision';
+    src: url('font/Vision.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('font/MyriadPro-Bold.otf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    font-family: "Vision";
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+section {
+    padding: 130px 0;
+    width: 100%;
+    float: left;
+}
+
+.parallax {
+    min-height: 550px;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.slick-slider button {
+	width: 40px;
+	height: 70px;
+    border: none;
+	cursor: pointer;
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	top: 40%;
+    background-image: url('images/arrow.png');
+}
+
+.slick-slider .slick-disabled {
+    opacity: .3;
+}
+
+.slick-slider .slick-arrow-left {
+    transform: rotate(180deg);
+    left: 5px;
+}
+
+.slick-slider .slick-arrow-right {
+    right: -20px;
+}
+
+.social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social .facebook {
+    background-image: url('images/facebook.png');
+}
+
+.social .linkedin {
+    background-image: url('images/linkedin.png');
+}
+
+.social .instagram {
+    background-image: url('images/instagram.png');
+}
+
+/*--------------------------------------------------------*/
+
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+}
+
+header .container {
+    max-width: 1400px;
+}
+
+header nav {
+    padding-top: 15px;
+}
+
+header nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+header nav a {
+    font-size: 16px;
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    padding: 10px;
+    display: inline-block;
+}
+
+header nav a:hover {
+    color: rgb(221, 221, 221);
+}
+
+header nav .btn {
+    color: rgb(20, 29, 41);
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    margin: 0 20px 0 10px;
+}
+
+header nav .btn:hover {
+    color: inherit !important;
+}
+
+header nav .login {
+    background-image: url('images/icon-login.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-left: 40px;
+}
+
+header nav .navbar-brand.login {
+    display: none;
+    font-size: 17.3px;
+    margin: 5px 0 0 15px;
+    background-size: 40px;
+    filter: brightness(0) invert(1);
+    padding-left: 45px;
+}
+
+header .social {
+    display: none;
+    margin-top: 40px;
+}
+
+header .social a {
+    filter: brightness(0) invert(1);
+    margin-left: 15px;
+}
+
+header .social a:first-child {
+    margin-left: 0;
+}
+
+/*--------------------------------------------------------*/
+
+#banner {
+    background-image: url('images/bg-home.jpg');
+    padding-top: 380px;
+    height: 100%;
+}
+
+#banner h2 {
+    font-size: 72px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: "MyriadPro";
+}
+
+#banner h2 span {
+    color: rgb(20, 29, 41);
+}
+
+#banner a {
+    font-size: 16px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    padding: 10px 32px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------*/
+
+#calc .header-calc {
+    text-align: center;
+}
+
+#calc .header-calc h2 {
+    font-size: 50px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    margin: 0;
+}
+
+#calc .header-calc p {
+    font-size: 16px;
+    color: rgb(20, 29, 41);
+    margin: 0;
+}
+
+#calc .header-calc .line {
+    background-color: rgb(20, 29, 41);
+    width: 260px;
+    height: 1px;
+    display: inline-block;
+}
+
+#calc ul {
+    border-bottom: 1px solid rgb(217, 215, 215);
+    text-align: center;
+    margin: 100px 0 50px 0;
+    padding: 0 0 5px 0;
+}
+
+#calc ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#calc ul li a {
+    font-size: 20px;
+    color: rgb(128, 126, 126);
+    padding: 0 10px 10px 10px;
+}
+
+#calc ul li a.active {
+    font-family: "MyriadPro";
+    color: rgb(0, 207, 222);
+    border-bottom: 2px solid rgb(0, 207, 222);
+}
+
+#calc .obs {
+    font-size: 12px;
+    color: rgb(128, 126, 126);
+    float: right;
+    margin-top: 30px;
+}
+
+#calc .price {
+    font-size: 40px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    display: block;
+}
+
+#calc .price span {
+    font-weight: normal;
+}
+
+#calc .invest-time {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(217, 215, 215);
+    padding-top: 16px;
+}
+
+#calc .invest-time .text {
+    font-size: 18px;
+    color: rgb(20, 29, 41);
+    position: relative;
+    top: 15px;
+}
+
+#calc .invest-time .btns {
+    float: right;
+}
+
+#calc .invest-time .btns button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#calc .invest-time .btns .decrease {
+    background-color: rgb(74, 90, 255);
+}
+
+#calc .invest-time .btns .add {
+    background-color: rgb(0, 207, 222);
+}
+
+#calc .rendimento {
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+#calc .rendimento div {
+    padding: 0;
+}
+
+#calc .rendimento .tesouro, #calc .rendimento .poupanca {
+    font-size: 24.2px;
+    position: relative;
+    height: 52px;
+    font-weight: 700;
+    padding-left: 30px;
+    line-height: 52px;
+    text-align: left;
+}
+
+#calc .rendimento .tesouro {
+    color: #fff;
+    background-color: rgb(0, 207, 222);
+    width: 296px;
+    margin-top: 30px;
+}
+
+#calc .rendimento .poupanca {
+    color: rgb(20, 29, 41);
+    background-color: rgb(217, 215, 215);
+    width: 203px;
+    margin-top: 10px;
+}
+
+#calc .rendimento .tesouro:after, #calc .rendimento .poupanca:after {
+    content: '';
+    position: absolute;
+    right: 113px;
+    top: 0;
+    background-color: rgb(85, 85, 85);
+    width: 1px;
+    height: 50px;
+}
+
+#calc .rendimento .poupanca:after {
+    right: 20px;
+}
+
+#calc .rendimento .percent {
+    font-size: 40px;
+    color: rgb(0, 207, 222);
+    font-weight: 700;
+    margin: 25px 0 0 0;
+}
+
+#calc .rendimento .description {
+    font-size: 18px;
+    color: rgb(20, 29, 41);
+    margin: 0;
+}
+
+#calc .rendimento-container .total {
+    text-align: center;
+    height: 143px;
+    padding-top: 40px;
+}
+
+#calc .rendimento-container .total .price {
+    line-height: 1;
+}
+
+#calc .rendimento-container .total .price.blue {
+    color: rgb(0, 207, 222);
+}
+
+#calc .rendimento-container .total .text {
+    font-size: 18px;
+    color: rgb(20, 29, 41);
+}
+
+#calc .bg-grey {
+    background-color: rgb(221, 221, 221);
+}
+
+#calc .bg-blue {
+    background-image: -moz-linear-gradient( 132deg, rgb(74,90,255) 0%, rgb(0,207,222) 100%);
+    background-image: -webkit-linear-gradient( 132deg, rgb(74,90,255) 0%, rgb(0,207,222) 100%);
+    background-image: -ms-linear-gradient( 132deg, rgb(74,90,255) 0%, rgb(0,207,222) 100%);
+}
+
+#calc .bg-blue .price {
+    color: #fff;
+}
+
+/*--------------------------------------------------------*/
+
+#agendar {
+    background-image: url('images/bg-agendar.jpg');
+}
+
+#agendar h2 {
+    font-size: 72px;
+    color: #fff;
+    line-height: 1;
+}
+
+#agendar h2 span {
+    font-family: "MyriadPro";
+    display: block;
+}
+
+#agendar a {
+    font-size: 16px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------*/
+
+#about {
+    background-image: url('images/bg-invest.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    padding-bottom: 200px;
+}
+
+#about .infos {
+    padding-top: 80px;
+}
+
+#about .infos h3 {
+    font-size: 24px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+}
+
+#about .infos h3 span {
+    display: block;
+}
+
+#about .infos p {
+    font-size: 16px;
+    color: rgb(142, 142, 140);
+    margin-top: 20px;
+}
+
+#about .infos a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: rgb(20, 29, 41);
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    margin-top: 80px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------*/
+
+#canal .bg-carousel {
+    background-color: #f7f7f7;
+    padding-right: 50px;
+}
+
+#canal .container {
+    max-width: 1540px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#canal .more-news-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#canal .more-news {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: rgb(20, 29, 41);
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+#canal .item {
+    padding: 50px 60px 100px 60px;
+}
+
+#canal .item img {
+    border-radius: 3px;
+}
+
+#canal .item .date {
+    font-size: 14px;
+    color: rgb(142, 142, 140);
+    margin: 5px 0 10px 0;
+    display: block;
+}
+
+#canal .item h3 {
+    font-size: 22.6px;
+    color: rgb(53, 60, 70);
+    font-weight: 700;
+}
+
+#canal .item p {
+    font-size: 15.1px;
+    color: rgb(142, 142, 140);
+}
+
+#canal .item a {
+    font-size: 15.1px;
+    font-family: "MyriadPro";
+    color: rgb(20, 29, 41);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#canal .item a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(20, 29, 41);
+    width: 61px;
+    height: 1px;
+}
+
+/*--------------------------------------------------------*/
+
+#taxa {
+    background-image: url('images/bg-taxa.jpg');
+}
+
+#taxa h2 {
+    font-size: 72px;
+    color: #fff;
+    line-height: 1;
+}
+
+#taxa h2 span {
+    font-family: "MyriadPro";
+    display: block;
+}
+
+#taxa a {
+    font-size: 16px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2.88px 0.12px rgba(4, 6, 5, 0.09);
+    padding: 10px 32px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------*/
+
+#depoiments .slick-slider .slick-arrow-left {
+    left: -50px;
+}
+
+#depoiments .item {
+    border-left: 1px solid #dddddd;
+    position: relative;
+    padding: 40px 50px 100px 50px;
+}
+
+#depoiments .item .icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('images/icon-depoiment.png');
+}
+
+#depoiments .item .text {
+    font-size: 17px;
+    color: rgb(142, 142, 140);
+    text-align: left;
+    height: 160px;
+}
+
+#depoiments .item .time {
+    font-size: 20.8px;
+    font-family: "MyriadPro";
+    color: rgb(20, 29, 41);
+    text-align: left;
+}
+
+/*--------------------------------------------------------*/
+
+.header-section {
+    margin-bottom: 70px;
+}
+
+.header-section h2 {
+    font-size: 51px;
+    color: rgb(20, 29, 41);
+    font-weight: 700;
+    display: block;
+}
+
+.header-section .line {
+    background-color: rgb(20, 29, 41);
+    width: 261px;
+    height: 1px;
+    display: inline-block;
+}
+
+/*--------------------------------------------------------*/
+
+.footer-mobile {
+    display: none;
+}
+
+footer {
+    background-color: rgb(20, 29, 41);
+    width: 100%;
+    padding: 80px 120px;
+    text-align: center;
+    float: left;
+}
+
+footer .links {
+    margin-top: 50px;
+}
+
+footer .links a{
+    font-size: 16px;
+    color: rgb(69, 73, 77);
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer img {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: rgb(151, 152, 153);
+    float: left;
+    margin-top: 10px;
+}
+
+footer .social {
+    float: right;
+}
+
+footer .bottom {
+    border-top: 1px solid rgba(221, 221, 221, 0.251);
+    padding-top: 3px;
+    margin-top: 50px;
+}
