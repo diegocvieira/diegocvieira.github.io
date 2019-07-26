@@ -71,6 +71,7 @@ section:nth-child(odd) .divider i { background-color: #2b2b2b; color: #f6f6f6; }
 #projetos .more-infos .info-bottom { position: absolute; right: 20px; bottom: 20px; width: 100%; text-align: right; }
 #projetos .more-infos .info-bottom a { margin-left: 15px; }
 #projetos .more-infos .info-bottom i { color: #f6f6f6; font-size: 25px; }
+#projetos .item .more-infos h4 { font-size: 32px; }
 
 #contato .email { font-size: 2rem; }
 #contato .email p { color: #f6f6f6; }
