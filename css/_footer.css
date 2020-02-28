@@ -1,0 +1,31 @@
+footer {
+    padding: 30px 0;
+    font-size: 17px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    background-color: #1b242f;
+    position: relative;
+}
+
+footer p {
+    color: #f6f6f6;
+    margin: 20px 0 0 0;
+}
+
+footer .quote-icon {
+    font-size: 20px;
+}
+
+footer .goTop {
+    width: 47px;
+    padding: 10px 0 7px 0;
+    margin: -60px auto 30px auto;
+    background-color: #e31b6d;
+    cursor: pointer;
+}
+
+footer .goTop i {
+    font-size: 35px;
+    color: #f6f6f6;
+}

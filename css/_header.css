@@ -1,0 +1,47 @@
+header {
+    transition: .5s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+header nav {
+    background-color: #1b242f !important;
+    border-bottom: 3px solid #04c2c9;
+}
+
+header nav .navbar-item {
+    color: #fff !important;
+    transition: .5s;
+}
+
+header nav .navbar-item.active,
+header nav .navbar-item:hover {
+    color: #e31b6d !important;
+    background-color: transparent !important;
+}
+
+.navbar-menu {
+    background-color: #1b242f;
+}
+
+.navbar-burger,
+.navbar-burger:hover {
+    color: #fff;
+}

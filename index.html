@@ -8,100 +8,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/icon.ico">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="https://kit.fontawesome.com/1d3d3bbb19.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="inicio" class="header-shorta">
-            <video autoplay="" muted="" loop="" poster="images/bg.jpg">
-                <source src="images/bg.mp4" type="video/mp4" />
-            </video>
+        <section id="home">
+            <div id="pt" class="canvas"></div>
 
-            <div class="container">
-                <div class="row">
-                    <nav class="navbar col-xs-12" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
-                                <span class="sr-only"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+            <div class="content hero">
+                <img src="images/perfil.jpg" alt="Diego Vieira" class="logo" />
 
-                            <div class="diego-infos">
-                                <div class="col-xs-12 text-center">
-                                    <img src="images/perfil.jpg" alt="Diego Vieira" class="logo" />
+                <h1>Diego Vieira</h1>
 
-                                    <h1>Diego Vieira</h1>
+                <p>Full Stack Web Developer</p>
 
-                                    <p>Full Stack Web Developer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bar">
-                            <ul class="nav navbar-nav">
-                                <li class="inactive">
-                                    <a href="#sobre">SOBRE</a>
-                                </li>
-
-                                <li class="inactive">
-                                    <a href="#projetos">PROJETOS</a>
-                                </li>
-
-                                <li class="inactive">
-                                    <a href="#conhecimentos">CONHECIMENTOS</a>
-                                </li>
-
-                                <li class="active">
-                                    <a href="#contato">CONTATO</a>
-                                </li>
-
-                                <span></span>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                <a href="#projects" class="anchor-link">
+                    veja meus projetos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
+        </section>
+
+        <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbar" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="anchor-link navbar-item active" href="#home">INÍCIO</a>
+
+                            <a class="anchor-link navbar-item" href="#about">SOBRE</a>
+
+                            <a class="anchor-link navbar-item" href="#projects">PROJETOS</a>
+
+                            <a class="anchor-link navbar-item" href="#skills">CONHECIMENTOS</a>
+
+                            <a class="anchor-link navbar-item" href="#contact">CONTATO</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <section id="sobre">
+        <section class="section" id="about">
             <div class="container">
                 <div class="header-title">
                     <h2>SOBRE</h2>
 
                     <span class="divider">
-                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                        <i class="fas fa-coffee"></i>
                     </span>
                 </div>
 
-                <p class="description">
-                    <b>Hello World!</b><br>Meu nome é Diego Conceição Vieira, sou desenvolvedor Web Full Stack.
-                    <br>Sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL).
-                    <br>Como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho!
-                    <br>Estou em busca de novas experiências para aprofundar e adquirir conhecimentos e assim poder desenvolver códigos mais limpos e com mais eficiência!
-                </p>
-
-                <div class="cv">
-                    <a href="diego-vieira.pdf" target="_blank">BAIXAR CURRÍCULO</a>
+                <div class="columns is-centered">
+                    <div class="column is-10-desktop is-12-tablet">
+                        <p class="description">
+                            <b>Hello World!</b><br>Meu nome é Diego Conceição Vieira, sou desenvolvedor Web Full Stack.
+                            <br>Sou formado em Tecnologia em Sistemas para Internet pelo Instituto Federal Sul-rio-grandense (IFSUL).
+                            <br>Como sou aficionado por tecnologia, procuro sempre ficar por dentro das novidades que surgem no mercado para aplicá-las em cada projeto em que trabalho!
+                            <br>Estou em busca de novas experiências para aprofundar e adquirir conhecimentos e assim poder desenvolver códigos mais limpos e com mais eficiência!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projetos">
+        <section class="section" id="projects">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg>
+
             <div class="container">
                 <div class="header-title">
                     <h2>PROJETOS</h2>
 
                     <span class="divider">
-                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <i class="fas fa-code"></i>
                     </span>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="columns is-multiline">
+                    <div class="column is-6">
                         <div class="item">
                             <a href="http://www.ucpel.edu.br/" target="_blank">
                                 <img src="images/projects/portal-ucpel.png" alt="Portal UCPel" class="img-responsive" />
@@ -119,7 +114,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <div class="item">
                             <a href="https://www.vivaidealiza.com.br/" target="_blank">
                                 <img src="images/projects/idealiza.png" alt="Idealiza" class="img-responsive" />
@@ -131,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <div class="item">
                             <a href="https://www.gxinveste.com.br/" target="_blank">
                                 <img src="images/projects/gx.png" alt="GX Investimentos" class="img-responsive" />
@@ -143,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <div class="item">
                             <a href="http://royalpark.zabaleta.com.br/" target="_blank">
                                 <img src="images/projects/royal-park.png" alt="Zabaleta - Royal Park" class="img-responsive" />
@@ -155,7 +150,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <a href="https://www.naslojas.com" target="_blank">
                             <div class="item">
                                 <img src="images/projects/naslojas.png" alt="Naslojas" class="img-responsive" />
@@ -173,7 +168,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <div class="item">
                             <a href="http://tv.ucpel.edu.br/" target="_blank">
                                 <img src="images/projects/tv-ucpel.png" alt="TV UCPel" class="img-responsive" />
@@ -185,7 +180,7 @@
                         </div>
                     </div>
 
-                    <!--<div class="col-md-6">
+                    <!--<div class="column is-6">
                         <div class="item">
                             <img src="images/projects/seusuper.jpg" alt="SeuSuper" class="img-responsive" />
 
@@ -201,7 +196,7 @@
                         </div>
                     </div>-->
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <a href="https://github.com/diegocvieira/Infochat" target="_blank">
                             <div class="item">
                                 <img src="images/projects/infochat.png" alt="Infochat" class="img-responsive" />
@@ -219,7 +214,7 @@
                         </a>
                     </div>
 
-                    <!--<div class="col-md-6">
+                    <!--<div class="column is-6">
                         <a href="https://github.com/diegocvieira/insidetv" target="_blank">
                             <div class="item">
                                 <img src="images/projects/insidetv.png" alt="InsideTv" class="img-responsive" />
@@ -237,7 +232,7 @@
                         </a>
                     </div>-->
 
-                    <!--<div class="col-md-6">
+                    <!--<div class="column is-6">
                         <div class="item">
                             <img src="images/projects/liga.jpg" alt="Liga Operária" />
 
@@ -253,7 +248,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="column is-6">
                         <div class="item">
                             <img src="images/projects/megatech.jpg" alt="Megatech" />
 
@@ -272,348 +267,97 @@
             </div>
         </section>
 
-        <section id="conhecimentos">
+        <section class="section" id="experience">
+            <!-- <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg>
+
+            <div class="container">
+                <div class="header-title">
+                    <h2>EXPERIÊNCIA</h2>
+
+                    <span class="divider">
+                        <i class="mdi mdi-code-tags"></i>
+                    </span>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="section" id="skills">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg>
+
             <div class="container">
                 <div class="header-title">
                     <h2>CONHECIMENTOS E HABILIDADES</h2>
 
                     <span class="divider">
-                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <i class="fas fa-book-open"></i>
                     </span>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/html.png" class="html" alt="HTML" />
-
-                            <div class="more-infos">
-                                <h4>HTML 5</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/css.png" class="css" alt="CSS" />
-
-                            <div class="more-infos">
-                                <h4>CSS 3</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/sass.png" alt="Sass" />
-
-                            <div class="more-infos">
-                                <h4>Sass</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/less.png" alt="Less" />
-
-                            <div class="more-infos">
-                                <h4>Less</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/bootstrap.png" alt="Bootstrap" />
-
-                            <div class="more-infos">
-                                <h4>Bootstrap</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/materialize.png" alt="Materialize" />
-
-                            <div class="more-infos">
-                                <h4>Materialize</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/ux-ui.png" alt="UX-UI" />
-
-                            <div class="more-infos">
-                                <h4>User Experience<br>User Interface</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/js.png" class="js" alt="JavaScript" />
-
-                            <div class="more-infos">
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/jquery.png" alt="jQuery" />
-
-                            <div class="more-infos">
-                                <h4>jQuery</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/ajax.png" alt="Ajax" />
-
-                            <div class="more-infos">
-                                <h4>Ajax</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/php.png" alt="PHP" />
-
-                            <div class="more-infos">
-                                <h4>PHP</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/laravel.png" alt="Laravel" />
-
-                            <div class="more-infos">
-                                <h4>Laravel</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/laravel-mix.png" alt="Laravel Mix" />
-
-                            <div class="more-infos">
-                                <h4>Laravel Mix</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/gulp.png" alt="Gulp" />
-
-                            <div class="more-infos">
-                                <h4>Gulp</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/composer.png" alt="Composer" />
-
-                            <div class="more-infos">
-                                <h4>Composer</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/npm.png" alt="Npm" />
-
-                            <div class="more-infos">
-                                <h4>Npm</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/mysql.png" alt="MySQL" />
-
-                            <div class="more-infos">
-                                <h4>MySQL</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/postgresql.png" alt="PostgreSQL" />
-
-                            <div class="more-infos">
-                                <h4>PostgreSQL</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/git.png" alt="Git" />
-
-                            <div class="more-infos">
-                                <h4>Git</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/linux.png" alt="Linux" />
-
-                            <div class="more-infos">
-                                <h4>Linux</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/photoshop.png" alt="Photoshop" />
-
-                            <div class="more-infos">
-                                <h4>Photoshop</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="item">
-                            <img src="images/skills/english.png" alt="Inglês" />
-
-                            <div class="more-infos">
-                                <h4>Inglês</h4>
-                                <p>Leitura e compreensão: avançado<br>Escrita e oral: intermediário</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="skills-canvas"></div>
             </div>
         </section>
 
-        <section id="contato">
+        <section class="section" id="contact">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg>
+
             <div class="container">
                 <div class="header-title">
                     <h2>CONTATO</h2>
 
                     <span class="divider">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i class="fas fa-envelope"></i>
                     </span>
-
-                    <p>Entre em contato para dúvidas, sugestões, orçamentos,<br>suporte ou qualquer outra forma de informação.</p>
                 </div>
 
-                <div class="row social">
-                    <div class="col-sm-2 col-sm-offset-3 col-xs-4">
+                <p class="description">Tem uma ideia legal?<br>Entre em contato para darmos início a esse projeto!</p>
+
+                <div class="columns is-centered is-mobile social">
+                    <div class="column is-2-tablet">
                         <a href="https://github.com/diegocvieira" target="_blank">
-                            <i class="fa fa-github" title="GitHub" aria-hidden="true"></i>
+                            <i class="fab fa-github" title="GitHub"></i>
                         </a>
                     </div>
 
-                    <div class="col-sm-2 col-xs-4">
+                    <div class="column is-2-tablet">
                         <a href="https://www.linkedin.com/in/diegocvieira" target="_blank">
-                            <i class="fa fa-linkedin" title="LinkedIn" aria-hidden="true"></i>
+                            <i class="fab fa-linkedin-in" title="LinkedIn"></i>
                         </a>
                     </div>
 
-                    <div class="col-sm-2 col-xs-4">
-                        <a href="https://www.facebook.com/diego.vieirac" target="_blank">
-                            <i class="fa fa-facebook" title="Facebook" aria-hidden="true"></i>
+                    <div class="column is-2-tablet">
+                        <a href="mailto:vieiracdiego@gmail.com" target="_blank">
+                            <i class="fas fa-envelope" title="E-mail"></i>
                         </a>
                     </div>
-                </div>
-
-                <div class="email">
-                    <p>Tem uma ideia legal?<br>Entre em contato para darmos início a esse projeto!</p>
-
-                    <a href="mailto:vieiracdiego@gmail.com">vieiracdiego@gmail.com</a>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="gotop">
-                <a href="#" class="link-gotop">
-                    <i class="fa fa-arrow-up"></i>
+            <div class="goTop">
+                <a href="#home" class="anchor-link" title="Ir para o topo">
+                    <i class="fas fa-angle-double-up"></i>
                 </a>
             </div>
 
             <p>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <i class="quote-icon fas fa-quote-left"></i>
                 <b>The people who are crazy enough to think they can change the world, are the ones who do. - Steve Jobs</b>
             </p>
 
             <p>Copyright © 2019 | Todos os Direitos Reservados | All Rights Reserved</p>
         </footer>
 
-        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-        <script>
-            $(function() {
-                $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
-                    $('.navbar-toggle:visible').click();
-                });
-
-                $(document).scroll(function() {
-                    var scrollPos = $(document).scrollTop() + 60;
-
-                    $('.navbar-nav a').each(function() {
-                        var currLink = $(this),
-                            refElement = $(currLink.attr('href'));
-
-                        if(scrollPos >= refElement.position().top && scrollPos < refElement.position().top + refElement.height()) {
-                            $('.navbar-nav a').removeClass('active');
-                            currLink.addClass('active');
-                        }
-                    });
-                });
-
-                $('.link-gotop').on('click', function(e) {
-                    e.preventDefault();
-
-                    $('html, body').animate({
-                        'scrollTop' : 0
-                    }, 900);
-                });
-
-                $('nav a').on('click', function(e) {
-                    e.preventDefault();
-
-                    var target = $(this.hash),
-                        href = $(this).attr('href');
-
-                    $('nav li').removeClass('active').addClass('inactive');
-                    $(this).parent().removeClass('inactive').addClass('active');
-
-                    $('html, body').animate({
-                        'scrollTop' : href == '#inicio' ? 0 : (target.offset().top) - 60
-                    }, 900);
-                });
-
-                $(window).scroll(function() {
-                    if ($(window).scrollTop() > 300) {
-                        $('header').addClass('header-short');
-                    } else {
-                        $('header').removeClass('header-short');
-                    }
-                });
-            });
-        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/svg3dtagcloud.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/pt.min.js"></script>
+        <script src="js/canvas.js"></script>
     </body>
 </html>

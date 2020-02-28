@@ -1,0 +1,16 @@
+@import '_header';
+@import '_home';
+@import '_footer';
+
+body {
+    font-family: 'Raleway', sans-serif;
+    transition: .5s;
+}
+
+body * {
+    outline: none;
+}
+
+body, html {
+    height: 100%;
+}
