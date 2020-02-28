@@ -221,6 +221,14 @@
 
     #projects .item .more-infos { padding: 5px; }
     #projects .item p { font-size: 15px; }
+
+    #home .content h1 {
+        font-size: 30px;
+    }
+
+    #home .content p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
