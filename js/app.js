@@ -1,6 +1,4 @@
 $(function() {
-    $('body').css('opacity', '1');
-
     // Open hamburger menu
     $('.navbar-burger').click(function() {
         $('.navbar-burger, .navbar-menu').toggleClass('is-active');
