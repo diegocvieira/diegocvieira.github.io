@@ -7,7 +7,10 @@ $(function() {
     // Generate skills canvas
     var skill_size = '80';
     var entries = [
-        // { image: '/images/skills/ajax.png', tooltip: 'Ajax', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
+        { image: '/images/skills/wordpress.png', tooltip: 'Wordpress', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
+        { image: '/images/skills/drupal.png', tooltip: 'Drupal', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
+        { image: '/images/skills/macos.png', tooltip: 'MacOS', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
+        { image: '/images/skills/bulma.png', tooltip: 'Bulma', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
         { image: '/images/skills/bootstrap.png', tooltip: 'Bootstrap', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
         { image: '/images/skills/css.png', tooltip: 'CSS3', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
         { image: '/images/skills/git.png', tooltip: 'Git', width: skill_size, height: skill_size, url: 'javascript: void(0)', target: '_self' },
