@@ -132,9 +132,9 @@ $(function() {
             'title': 'Naslojas',
             'description': 'Sistema para encontrar lojas da sua cidade',
             'image': 'images/projects/naslojas.png',
-            'stack': ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'JQuery', 'PHP', 'Laravel', 'Laravel Mix', 'MySQL', 'WebView'],
+            'stack': ['HTML5', 'Sass', 'JavaScript', 'JQuery', 'PHP', 'Laravel', 'Laravel Mix', 'MySQL'], //addwebview
             'website': false,
-            'github': false,
+            'github': 'https://github.com/diegocvieira/naslojas',
         },
         {
             'title': 'TV UCPel',
@@ -148,9 +148,9 @@ $(function() {
             'title': 'Infochat',
             'description': 'Sistema para encontrar profissionais da sua cidade',
             'image': 'images/projects/infochat.png',
-            'stack': ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'JQuery', 'PHP', 'Laravel', 'Laravel Mix', 'MySQL', 'WebView'],
-            'website': 'https://www.infochat.com.br',
-            'github': false,
+            'stack': ['HTML5', 'Sass', 'JavaScript', 'JQuery', 'PHP', 'Laravel', 'Laravel Mix', 'MySQL'], //add webview
+            'website': false,
+            'github': 'https://github.com/diegocvieira/Infochat',
         }
     ];
 
@@ -178,9 +178,8 @@ $(function() {
             project_html +=
                 "<a href='" + project.github + "' target='_blank' class='github project__ribbon'>"
                     + "<div>"
-                        + "<a href='" + project.github + "' target='_blank'>"
-                            + "<i class='fab fa-github'></i>"
-                            + "<span>GitHub</span>"
+                        + "<i class='fab fa-github'></i>"
+                        + "<span>GitHub</span>"
                     + "</div>"
                 + "</a>";
         }
