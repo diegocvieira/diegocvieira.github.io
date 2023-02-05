@@ -1,0 +1,5 @@
+node_modules
+.DS_STORE
+dist/app.min.js.LICENSE.txt
+dist/*.ttf
+dist/*.otf

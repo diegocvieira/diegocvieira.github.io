@@ -2,231 +2,250 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Diego Vieira | Full-Stack Web Developer</title>
-        <meta content="Diego Vieira | Full-Stack Web Developer" name="description">
+        <title>Diego Vieira | Software Engineer</title>
+        <meta content="Diego Vieira | Software Engineer" name="description">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/icon.ico">
-        <link rel="stylesheet" href="css/bulma-0.8.0.min.css">
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="icon" href="./resources/images/icon.ico">
+        <link rel="stylesheet" href="./dist/app.min.css">
     </head>
     <body>
-        <section id="home">
-            <div id="pt" class="canvas"></div>
+        <header id="header">
+            <div class="container">
+                <div id="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <div class="content hero">
-                <img src="images/profile.jpg" alt="Diego Vieira" />
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home" class="header-link anchor-link current">HOME</a>
+                        </li>
 
-                <h1>Diego Vieira</h1>
+                        <li>
+                            <a href="#about" class="header-link anchor-link">ABOUT</a>
+                        </li>
 
-                <p>Full-Stack Web Developer</p>
+                        <li>
+                            <a href="#jobs" class="header-link anchor-link">JOBS</a>
+                        </li>
 
-                <a href="#projects" class="anchor-link">
-                    see my projects
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+                        <li>
+                            <a href="#projects" class="header-link anchor-link">PROJECTS</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="header-link anchor-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </header>
 
-        <header>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
+        <main>
+            <section class="section" id="home">
+                <div class="container is-max-desktop">
+                    <h1>Hello, my name is</h1>
+                    <h2>Diego Vieira.</h2>
+                    <h3>I build things for the web.</h3>
+                    <p>I'm a software engineer specializing in building digital experiences. Currently, I'm focused on manage a tech team and building accessible, human-centered products at <a href="https://www.inbenta.com" target="_blank">Inbenta</a>.</p>
+                </div>
+
+                <div class="arrow-container">
+                    <a class="anchor-link" href="#about" title="Check out about me">
+                        <svg id="down-arrow" data-name="mouse-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.52 16.52">
+                            <path d="M23.32,1.48l-8.84,8.84a1.73,1.73,0,0,1-2.44,0L3.2,1.48a1.7,1.7,0,0,0-2.43,0h0a1.72,1.72,0,0,0,0,2.43L12,15.18a1.71,1.71,0,0,0,2.44,0L25.75,3.91a1.72,1.72,0,0,0,0-2.43h0A1.7,1.7,0,0,0,23.32,1.48Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="container is-max-desktop">
+                    <div class="section-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" class="section-header-icon">
+                            <path fill-rule="nonzero" d="M70.834,3C82.425,3.111 92.886,13.159 93,25.166C93.049,40.437 93.143,55.708 92.998,70.977C92.816,82.459 82.841,92.886 70.834,93C55.563,93.049 40.292,93.143 25.023,92.998C13.543,92.816 3.115,82.841 3,70.834C2.952,55.563 2.857,40.292 3.002,25.023C3.184,13.541 13.159,3.115 25.166,3C40.389,2.952 55.611,2.952 70.834,3ZM25.315,9C16.855,9.027 9.085,16.286 9,25.204C8.952,40.437 8.856,55.67 9.001,70.901C9.134,79.284 16.416,86.916 25.204,87C40.437,87.049 55.67,87.143 70.901,86.999C79.289,86.865 86.916,79.584 87,70.796C87.049,55.563 87.143,40.33 86.999,25.099C86.865,16.712 79.595,9.084 70.796,9C55.636,8.952 40.475,9 25.315,9Z" fill="#34a853" class="color000000 svgShape"></path><path fill-rule="nonzero" d="M48.249 15.415C59.178 15.622 68.671 26.285 67.113 37.408 65.838 46.504 57.241 54.013 48 54.013 36.881 54.013 26.945 42.8 29.002 31.301 30.558 22.599 38.598 15.589 47.751 15.415 48 15.413 48 15.413 48.249 15.415zM47.828 21.414C39.039 21.581 31.897 31.942 36.011 40.474 39.616 47.953 50.952 50.271 57.173 44.339 64.445 37.406 60.6 21.651 48.172 21.414 48 21.413 48 21.413 47.828 21.414zM48.298 58.014C60.127 58.177 71.525 65.212 76.794 76.046 77.903 78.326 75.659 81.393 73.097 80.375 71.196 79.619 70.68 77.118 69.461 75.34 62.102 64.604 46.158 60.832 34.704 67.67 30.298 70.3 26.725 74.255 24.498 78.887 24.498 78.887 23.476 80.51 21.938 80.584 19.586 80.696 18.093 78.102 19.714 75.047 25.15 64.797 36.377 57.96 48.298 58.014z"></path>
+                        </svg>
+
+                        <h2 class="section-header-title">About me</h2>
                     </div>
 
-                    <div id="navbar" class="navbar-menu">
-                        <div class="navbar-start">
-                            <a class="anchor-link navbar-item active" href="#home">HOME</a>
+                    <div class="is-flex is-flex-wrap-wrap">
+                        <div class="description">
+                            <p>Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet.</p>
+                            <p>My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS.</p>
+                            <p>Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers.</p>
+                            <p>Here are a few technologies I've been working with recently:</p>
 
-                            <a class="anchor-link navbar-item" href="#about">ABOUT</a>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Slim</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>VueJS</li>
+                            </ul>
+                        </div>
 
-                            <a class="anchor-link navbar-item" href="#projects">PROJECTS</a>
-
-                            <a class="anchor-link navbar-item" href="#skills">SKILLS</a>
-
-                            <a class="anchor-link navbar-item" href="#contact">CONTACT</a>
+                        <div class="image">
+                            <img src="./resources/images/profile.jpg" alt="Diego Vieira" />
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </section>
 
-        <section class="section" id="about">
-            <div class="container">
-                <div class="header-title">
-                    <h2>ABOUT</h2>
+            <section class="section" id="jobs">
+                <div class="container is-max-desktop">
+                    <div class="section-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="section-header-icon">
+                            <path d="M30 8h-6V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v4H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM2 10h28v18H2V10zm8-6h12v4H10V4z"></path>
+                        </svg>
 
-                    <span class="divider">
-                        <i class="fas fa-coffee"></i>
-                    </span>
-                </div>
-
-                <div class="columns is-centered">
-                    <div class="column is-10-desktop is-12-tablet">
-                        <p class="description">
-                            <b>Hello World!</b>
-                            <br>I'm Diego Vieira, a Full-Stack Web Developer based in Pelotas, Brazil.
-                            <br>I'm graduated in Tecnologia em Sistemas para Internet from Instituto Federal Sul-rio-grandense (IFSUL).
-                            <br>As i am passionate about technology, i'm always try to stay up to the news that are on the market to apply them in each project i work on!
-                            <br>I'm looking for new experiences to deepen and acquire knowledge and be able to develop cleaner and more efficient codes!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="projects">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z"></path>
-            </svg>
-
-            <div class="container">
-                <div class="header-title">
-                    <h2>PROJECTS</h2>
-
-                    <span class="divider">
-                        <i class="fas fa-code"></i>
-                    </span>
-                </div>
-
-                <!--Projects are loaded by JS-->
-                <div class="columns is-multiline"></div>
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z"></path>
-            </svg>
-
-            <div class="container">
-                <div class="header-title">
-                    <h2>EXPERIENCES</h2>
-
-                    <span class="divider">
-                        <i class="fas fa-briefcase"></i>
-                    </span>
-                </div>
-
-                <article class="work">
-                    <p>september/2021 - now</p>
-                    <hr>
-                    <h3>Back-End Developer</h3>
-                    <h4>Sapient AG2</h4>
-                </article>
-
-                <article class="work">
-                    <p>september/2019 - september/2021</p>
-                    <hr>
-                    <h3>Back-End Developer</h3>
-                    <h4>Prodigious</h4>
-                </article>
-
-                <article class="work">
-                    <p>january/2019 - august/2019</p>
-                    <hr>
-                    <h3>Front-End Developer</h3>
-                    <h4>Human2be</h4>
-                </article>
-
-                <article class="work">
-                    <p>october/2017 - september/2018</p>
-                    <hr>
-                    <h3>Full-Stack Developer</h3>
-                    <h4>Naslojas</h4>
-                </article>
-
-                <article class="work">
-                    <p>july/2016 - august/2019</p>
-                    <hr>
-                    <h3>Full-Stack Developer</h3>
-                    <h4>Freelancer</h4>
-                </article>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z"></path>
-            </svg>
-
-            <div class="container">
-                <div class="header-title">
-                    <h2>SKILLS</h2>
-
-                    <span class="divider">
-                        <i class="fas fa-book-open"></i>
-                    </span>
-                </div>
-
-                <div id="skills-canvas"></div>
-            </div>
-        </section>
-
-        <section class="section" id="contact">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-                <path d="M0 0 L50 100 L100 0 Z"></path>
-            </svg>
-
-            <div class="container">
-                <div class="header-title">
-                    <h2>CONTACT</h2>
-
-                    <span class="divider">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                </div>
-
-                <p class="description">Have a question or want to work together?<br>Be in touch!</p>
-
-                <div class="columns is-centered is-mobile social">
-                    <div class="column is-2-tablet">
-                        <a href="https://github.com/diegocvieira" target="_blank">
-                            <i class="fab fa-github" title="GitHub"></i>
-                        </a>
+                        <h2 class="section-header-title">Where I've worked</h2>
                     </div>
 
-                    <div class="column is-2-tablet">
-                        <a href="https://www.linkedin.com/in/diegocvieira" target="_blank">
-                            <i class="fab fa-linkedin-in" title="LinkedIn"></i>
-                        </a>
-                    </div>
+                    <div class="jobs-container">
+                        <div class="jobs-navigation">
+                            <div id="job-highlight"></div>
 
-                    <div class="column is-2-tablet">
-                        <a href="mailto:vieiracdiego@gmail.com" target="_blank">
-                            <i class="fas fa-envelope" title="E-mail"></i>
-                        </a>
+                            <ul id="js-jobs-navigation"></ul>
+                        </div>
+
+                        <div id="js-jobs-info" class="jobs-info"></div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="container is-max-desktop">
+                    <div class="section-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.424 126.936" class="section-header-icon">
+                            <path d="M51.895 106.535a9.039 9.039 0 0 1-6.018-2.284L0 63.469l48.427-43.05a9.066 9.066 0 0 1 12.042 13.555L27.296 63.469l30.628 27.217a9.072 9.072 0 0 1-6.018 15.85Zm81.1-.017 48.427-43.05-45.876-40.782a9.065 9.065 0 0 0-12.038 13.554l30.628 27.228-33.176 29.484a9.068 9.068 0 0 0 12.036 13.566Zm-42.408 12.846 18.133-108.8a9.063 9.063 0 1 0-17.878-2.986l-18.134 108.8a9.066 9.066 0 0 0 7.452 10.438 9.616 9.616 0 0 0 1.5.119 9.068 9.068 0 0 0 8.931-7.571Z" class="color000000 svgShape"/>
+                        </svg>
+                        
+                        <h2 class="section-header-title">Some projects I've built</h2>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column" id="js-featured-projects"></div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="sub-section-header">
+                            <h3 class="sub-section-header-title">Other noteworthy projects</h3>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Title</th>
+                                    <th>Made at</th>
+                                    <th>Build with</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="js-projects"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="container is-max-desktop">
+                    <div class="section-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="section-header-icon">
+                            <path d="M27 4.71H5a4.505 4.505 0 0 0-4.5 4.5v13.58c0 2.481 2.019 4.5 4.5 4.5h22c2.481 0 4.5-2.019 4.5-4.5V9.21c0-2.481-2.019-4.5-4.5-4.5zm-1.33 3L24.29 8.8l-7.36 5.81c-.55.43-1.31.43-1.86 0L7.97 9 6.333 7.71h19.338zM27 24.29H5c-.827 0-1.5-.673-1.5-1.5V9.305l9.71 7.665c.82.65 1.81.97 2.79.97s1.97-.32 2.79-.97l9.71-7.662V22.79c0 .827-.673 1.5-1.5 1.5z"/>
+                        </svg>
+                        
+                        <h2 class="section-header-title">Get in touch</h2>
+                    </div>
+
+                    <p>Although I'm not looking for any new opportunity right now, I'm always open to talk. Whether you have a question or just want to say hi!</p>
+
+                    <ul>
+                        <li>
+                            <a href="https://github.com/diegocvieira" class="social-github" title="GitHub" target="_blank">
+                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+                                    <circle cx="100" cy="100" r="50"/>
+                                </svg>
+
+                                <div class="social">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/diegocvieira" class="social-linkedin" title="LinkedIn" target="_blank">
+                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+                                    <circle cx="100" cy="100" r="50"/>
+                                </svg>
+        
+                                <div class="social">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/vieiracdiego" class="social-instagram" title="Instagram" target="_blank">
+                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
+                                    <circle cx="100" cy="100" r="50"/>
+                                </svg>
+
+                                <div class="social">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="is-flex is-justify-content-center">
+                        <a href="mailto:vieiracdiego@gmail.com" target="_blank" class="is-button">Say Hello</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer>
-            <div class="goTop">
-                <a href="#home" class="anchor-link" title="Ir para o topo">
-                    <i class="fas fa-angle-double-up"></i>
+            <div class="go-top">
+                <a href="#home" class="anchor-link is-flex" title="Ir para o topo">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a8b2d1" stroke="none">
+                            <path d="M2450 5048 c-186 -169 -1228 -1145 -1241 -1163 -12 -17 -15 -138 -17 -700 -2 -374 0 -695 3 -714 9 -46 46 -81 87 -81 30 0 85 53 655 622 l623 623 623 -623 c570 -569 625 -622 655 -622 41 0 78 35 87 81 3 19 5 340 3 714 -2 562 -5 683 -17 700 -13 18 -1055 994 -1241 1163 -62 55 -87 72 -110 72 -23 0 -48 -17 -110 -72z"/>
+                            <path d="M2483 2688 c-173 -157 -1261 -1176 -1273 -1192 -13 -18 -15 -116 -18 -701 -2 -374 0 -695 3 -714 9 -46 46 -81 87 -81 30 0 85 53 655 622 l623 623 618 -617 c658 -658 650 -651 706 -614 14 9 30 33 36 53 8 27 10 248 8 723 -3 590 -5 688 -18 706 -12 16 -1100 1035 -1273 1192 -33 30 -55 42 -77 42 -22 0 -44 -12 -77 -42z"/>
+                        </g>
+                    </svg>
                 </a>
             </div>
 
-            <p>
-                <i class="quote-icon fas fa-quote-left"></i>
-                <b>The people who are crazy enough to think they can change the world, are the ones who do. - Steve Jobs</b>
-            </p>
+            <div class="quote">
+                <svg xmlns="http://www.w3.org/2000/svg" class="quote-icon" viewBox="0 0 24 24">
+                    <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/>
+                </svg>
 
-            <p>Copyright © 2022 | All Rights Reserved</p>
+                <p class="quote-text">Stay hungry, stay foolish. - Steve Jobs</p>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2022 | All Rights Reserved</p> 
+            </div>
         </footer>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/svg3dtagcloud.min.js"></script>
-        <script src="js/pt.min.js"></script>
-        <script src="js/canvas.js"></script>
-        <script src="js/fontawesome.js"></script>
-        <script src="js/app.js"></script>
+        <script src="./dist/app.min.js"></script>
     </body>
 </html>
