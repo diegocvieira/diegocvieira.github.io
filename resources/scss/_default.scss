@@ -97,6 +97,7 @@ a {
             width: 50px;
             position: relative;
             top: -3px;
+            margin: 0 10px 0 0;
 
             path {
                 fill: $greyColor;
@@ -107,7 +108,7 @@ a {
             font-size: 30px;
             color: $whiteColor;
             font-weight: 700;
-            margin: 0 10px;
+            margin: 0 10px 0 0;
         }
     }
 }
@@ -128,5 +129,17 @@ a {
     .section {
         padding-top: 50px;
         padding-bottom: 50px;
+
+        &-header {
+            &-title {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .sub-section-header {
+        &-title {
+            font-size: 24px;
+        }
     }
 }

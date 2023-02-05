@@ -55,8 +55,8 @@ export default function () {
                 <tr class="project">
                     <td class="project-year">${project.release_year}</td>
                     <td class="project-title">${project.title}</td>
-                    <td class="project-company">${project.company}</td>
-                    <td class="project-stack">${project.stack.join(' · ')}</td>
+                    <td class="project-company is-hidden-mobile">${project.company}</td>
+                    <td class="project-stack is-hidden-mobile">${project.stack.join(' · ')}</td>
                     <td class="project-link">
                         ${getGithub(project.github)}
                         ${getWebsite(project.website)}

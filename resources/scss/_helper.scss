@@ -13,3 +13,9 @@
 .is-flex-wrap-wrap {
     flex-wrap: wrap;
 }
+
+@media (max-width: $tablet) {
+    .is-hidden-mobile {
+        display: none;
+    }
+}
