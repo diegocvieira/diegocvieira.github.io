@@ -1,0 +1,129 @@
+#contact {
+    p {
+        max-width: 540px;
+        color: #a8b2d1;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            position: relative;
+            display:inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        
+            .circle {
+                fill: none;
+                stroke: $greyColor;
+                stroke-width: 5px;
+                stroke-dasharray: 40; 
+                transition: all .2s ease-in-out;
+                animation: outWaveOut 1s cubic-bezier(0.128, 0.0, 0.128, 1.0) forwards;
+            }
+        
+            .social {
+                color: $greyColor;
+                font-size: 1.8em;    
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;    
+                transition: all .5s ease-in-out;
+                display: flex;
+                justify-content: center;
+
+                svg {
+                    width: 25px;
+                }
+            }
+
+            .social-github:hover {
+                .circle {
+                    animation: outWaveIn 1s cubic-bezier(0.128, 0.0, 0.128, 1.0) forwards, colorGithub 1s linear forwards;
+                }
+            
+                .social {
+                    color: $github-color;
+                }
+            }
+
+            .social-linkedin:hover {
+                .circle {
+                    animation: outWaveIn 1s cubic-bezier(0.128, 0.0, 0.128, 1.0) forwards, colorLinkedin 1s linear forwards;
+                }
+
+                .social {
+                    color: $linkedin-color;
+                }
+            }
+            
+            .social-instagram:hover {
+                .circle {
+                    animation: outWaveIn 1s cubic-bezier(0.128, 0.0, 0.128, 1.0) forwards, colorInstagram 1s linear forwards;
+                }
+            
+                .social {
+                    color: $instagram-color;
+                }
+            }
+        }
+    }
+
+    @keyframes colorGithub {
+        from { stroke: #ffffff; }
+        to { stroke: $github-color; }
+    }
+
+    @keyframes colorLinkedin {
+        from { stroke: #ffffff; }
+        to { stroke: $linkedin-color; }
+    }
+
+    @keyframes colorInstagram {
+        from { stroke: #ffffff; }
+        to { stroke: $instagram-color; }
+    }
+
+    @keyframes outWaveIn {
+        to {
+            stroke-width: 10px;
+            stroke-dasharray: 400;    
+        }
+    }
+
+    @keyframes outWaveOut {
+        from {
+            stroke-width: 10px;
+            stroke-dasharray: 400;
+        }
+        
+        to {
+            stroke: $greyColor;
+            stroke-width: 5px;
+            stroke-dasharray: 40; 
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

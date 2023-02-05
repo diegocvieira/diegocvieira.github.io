@@ -1,0 +1,134 @@
+[
+    {
+        "title": "Fronteiras do Pensamento",
+        "description": "",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://www.fronteiras.com",
+        "github": "",
+        "release_year": 2021,
+        "featured": false,
+        "company": "-----"
+    },
+    {
+        "title": "UCPel",
+        "description": "Website of the Universidade Católica de Pelotas that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "http://www.ucpel.edu.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "TV UCPel",
+        "description": "Website of the TV UCPel for the course of the Comunicação Social that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "http://tv.ucpel.edu.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "Carreiras UCPel",
+        "description": "",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://carreiras.ucpel.edu.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "Idealiza",
+        "description": "Website of the construction company Idealiza that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://www.vivaidealiza.com.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "GX Investimentos",
+        "description": "Website of the GX Investimentos that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://www.gxinveste.com.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "Royal Park",
+        "description": "Landing page of the construction project Royal Park from the construction company Zabaleta that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
+        "image": "",
+        "stack": ["HTML", "CSS", "JS", "jQuery"],
+        "website": "http://royalpark.zabaleta.com.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "Gelei",
+        "description": "",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://www.emporiogelei.com.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "UNE Franquias",
+        "description": "",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://unefranquias.com.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "ZECON Construtora",
+        "description": "",
+        "image": "",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "Voyager", "MySQL"],
+        "website": "https://www.zecon.eng.br",
+        "github": "",
+        "release_year": 2019,
+        "featured": false,
+        "company": "Human2be"
+    },
+    {
+        "title": "Naslojas",
+        "description": "Web App to the physical stores show their products. And to the users find and buy the best offers.",
+        "image": "/resources/images/projects/naslojas.png",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
+        "website": "",
+        "github": "https://github.com/diegocvieira/naslojas",
+        "release_year": 2020,
+        "featured": true,
+        "company": "-----"
+    },
+    {
+        "title": "Infochat",
+        "description": "A web app for visualizing professionals and stores profiles, so than get in touch and schedule a service.",
+        "image": "/resources/images/projects/infochat.png",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
+        "website": "",
+        "github": "https://github.com/diegocvieira/Infochat",
+        "release_year": 2018,
+        "featured": true,
+        "company": "-----"
+    }
+]

@@ -1,0 +1,123 @@
+#jobs {
+    .jobs-container {
+        display: flex;
+
+        .jobs-navigation {
+            flex: none;
+            margin-right: 50px;
+            position: relative;
+    
+            #job-highlight {
+                width: 2px;
+                height: 40px;
+                background-color: $highlightColor;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: .5s;
+            }
+    
+            ul {
+                li {
+                    a {
+                        color: $greyColor;
+                        display: flex;
+                        padding: 0 20px;
+                        align-items: center;
+                        height: 40px;
+                        font-size: 14px;
+                        text-decoration: none;
+                        font-family: "Roboto";
+    
+                        &.is-active, &:hover {
+                            color: $highlightColor;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .job {
+            &-title {
+                color: $whiteColor;
+                font-size: 24px;
+                margin: 0;
+            }
+    
+            &-range {
+                color: $greyColor;
+                font-size: 15px;
+                margin: 5px 0 25px 0;
+            }
+    
+            &-description {
+                margin: 0;
+    
+                li {
+                    color: $greyColor;
+                    font-size: 18px;
+                    padding-left: 25px;
+                    position: relative;
+    
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+    
+                    &:before {
+                        content: "▹";
+                        position: absolute;
+                        left: 0;
+                        color: $highlightColor;
+                    }
+                }
+            }
+
+            &-stack {
+                display: flex;
+                margin-top: 30px;
+
+                li {
+                    color: $greyColor;
+                    background-color: $darkestBlueColor;
+                    padding: 10px 15px;
+                    font-family: "Roboto";
+                    font-size: 12px;
+                    border-radius: 20px;
+
+                    &:not(:first-child) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $tablet) {
+        .jobs-container {
+            flex-wrap: wrap;
+
+            .jobs-navigation {
+                width: 100%;
+                margin-bottom: 20px;
+
+                #job-highlight {
+                    width: 87px;
+                    height: 2px;
+                    top: auto;
+                    bottom: 0;
+                }
+
+                ul {
+                    display: flex;
+                    overflow: auto;
+                    -ms-overflow-style: none; // Internet Explorer 10+
+                    scrollbar-width: none; // Firefox
+                }
+
+                ul::-webkit-scrollbar { 
+                    display: none; // Safari and Chrome
+                }
+            }
+        }
+    }
+}

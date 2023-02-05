@@ -1,0 +1,183 @@
+#projects {
+    .featured-project {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        &-content {
+            position: relative;
+            z-index: 2;
+            flex: 50% 0 0;
+            margin-right: -60px;
+            flex-wrap: wrap;
+
+            &-title {
+                color: $whiteColor;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 25px;
+                margin: 0;
+            }
+
+            &-release {
+                color: $greyColor;
+                font-size: 12px;
+                margin: 0;
+            }
+
+            &-description {
+                box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+                transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+                padding: 25px;
+                border-radius: 4px;
+                background-color: #112240;
+                color: $greyColor;
+                font-size: 18px;
+                margin-top: 15px;
+            }
+
+            &-stack {
+                display: flex;
+                color: $greyColor;
+                font-size: 14px;
+                margin: 25px 0 10px 0;
+                flex-wrap: wrap;
+
+                li:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+
+            &-links {
+                a {
+                    display: inline-flex;
+                    padding: 10px 10px 10px 0;
+
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        &-image {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                border-radius: 4px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media (min-width: $tablet) {
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+                text-align: right;
+        
+                .featured-project-content {
+                    margin-right: 0;
+                    margin-left: -60px;
+        
+                    &-stack {
+                        justify-content: flex-end;
+                    }
+
+                    &-links a {
+                        padding-right: 0;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $tablet) {
+            margin: 0 20px 50px 20px;
+
+            &-content {
+                flex: 100%;
+                background-color: rgba(17, 34, 64, .95);
+                box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+                padding: 30px 20px;
+                margin: 0;
+
+                &-description {
+                    background-color: transparent;
+                    box-shadow: none;
+                    padding: 0;
+                }
+            }
+        
+            &-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    table {
+        thead {
+            font-size: 18px;
+            color: $greyColor;
+            font-weight: 700;
+
+            th {
+                padding: 15px;
+            }
+        }
+
+        tbody tr {
+            transition: .5s;
+
+            &:hover {
+                background-color: #112240;
+            }
+
+            td {
+                padding: 0 0 10px 15px;
+            }
+        }
+    }
+
+    .project {
+        &-year {
+            font-size: 16px;
+            color: $highlightColor;
+        }
+
+        &-title {
+            font-size: 20px;
+            color: $whiteColor;
+            font-weight: 700;
+        }
+
+        &-company {
+            color: $greyColor;
+            font-size: 18px;
+        }
+
+        &-stack {
+            color: $greyColor;
+            font-size: 14px;
+        }
+
+        &-link {
+            a {
+                display: inline-flex;
+                padding: 10px 10px 10px 0;
+
+                svg {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

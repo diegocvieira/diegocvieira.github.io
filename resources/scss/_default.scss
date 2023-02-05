@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Calibre";
+    src: url(../fonts/calibre-regular.otf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto-regular.ttf);
+}
+
+body {
+    font-family: "Calibre";
+    background-color: $darkBlueColor;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+table {
+    width: 100%;
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $highlightColor;
+    transition: .5s;
+    text-decoration: none;
+
+    &.is-icon {
+        color: $whiteColor;
+    }
+
+    &:hover {
+        color: $highlightColor;
+        text-decoration: underline;
+    }
+
+    &.is-button {
+        color: $highlightColor;
+        background-color: transparent;
+        border: 1px solid $highlightColor;
+        border-radius: 4px;
+        padding: 1.25rem 1.75rem;
+        font-size: 18px;
+        line-height: 1;
+        text-decoration: none;
+        margin-top: 50px;
+        display: inline-flex;
+
+        &:hover {
+            color: $highlightColor;
+            text-decoration: none;
+        }
+    }   
+}
+
+.container {
+    max-width: 960px;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+.section {
+    padding: 150px 15px;
+
+    &:nth-child(even) {
+        background-color: $darkestBlueColor;
+    }
+
+    &-header {
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $greyColor;
+            position: relative;
+            top: -2px;
+        }
+
+        &-icon {
+            width: 50px;
+            position: relative;
+            top: -3px;
+
+            path {
+                fill: $greyColor;
+            }
+        }
+
+        &-title {
+            font-size: 30px;
+            color: $whiteColor;
+            font-weight: 700;
+            margin: 0 10px;
+        }
+    }
+}
+
+.sub-section-header {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+
+    &-title {
+        font-size: 30px;
+        color: $whiteColor;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: $tablet) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

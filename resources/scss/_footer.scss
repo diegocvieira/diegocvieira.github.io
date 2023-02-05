@@ -1,0 +1,44 @@
+footer {
+    padding: 30px 0;
+    font-size: 17px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    background-color: $darkestBlueColor;
+    position: relative;
+    margin-top: 50px;
+
+    .go-top {
+        width: 47px;
+        height: 60px;
+        margin: -60px auto 0 auto;
+        border: 2px solid $highlightColor;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            fill: $greyColor;
+            margin: 0 10px 5px 0;
+        }
+
+        &-text {
+            font-weight: 700;
+            color: $whiteColor;
+        }
+    }
+
+    .copyright {
+        color: $greyColor;
+    }
+}
