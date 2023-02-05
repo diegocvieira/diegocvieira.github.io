@@ -99,6 +99,7 @@
             .jobs-navigation {
                 width: 100%;
                 margin-bottom: 20px;
+                overflow: auto;
 
                 #job-highlight {
                     width: 87px;
@@ -109,7 +110,6 @@
 
                 ul {
                     display: flex;
-                    overflow: auto;
                     -ms-overflow-style: none; // Internet Explorer 10+
                     scrollbar-width: none; // Firefox
                 }

@@ -18,7 +18,7 @@ export default function jobsNavigation() {
 
         if (window.innerWidth < 769) {
             jobHighlight.style.setProperty('width', event.currentTarget.offsetWidth + 'px');
-            jobHighlight.style.setProperty('left', event.target.offsetLeft + 'px'); // ! FIX OFFSET LEFT ON MOBILE
+            jobHighlight.style.setProperty('left', event.target.offsetLeft + 'px');
         } else {
             jobHighlight.style.setProperty('top', event.target.offsetTop + 'px');
         }    
