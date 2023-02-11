@@ -4,8 +4,8 @@ import jobsNavigation from './_jobs-navigation.js';
 import projects from './_projects.js';
 import anchorLinks from './_anchor-links.js';
 
-await jobs();
-projects();
 header();
-anchorLinks();
+await jobs();
 jobsNavigation();
+projects();
+anchorLinks();
