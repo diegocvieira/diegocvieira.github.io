@@ -32,9 +32,9 @@ export default function () {
                             ${getWebsite(project.website)}
                         </div>
                     </div>
-                    <div class="featured-project-image">
+                    <picture class="featured-project-image">
                         <img src="${project.image}" alt="${project.title}" />
-                    </div>
+                    </picture>
                 </div>
             `;
         });
