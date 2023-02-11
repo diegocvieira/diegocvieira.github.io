@@ -1,4 +1,4 @@
-export default function jobsNavigation() {
+export default function () {
     const headerLinks = document.querySelectorAll('.header-link');
     const sections = document.querySelectorAll('.section');
     const menuMobile = document.getElementById('menu-mobile');

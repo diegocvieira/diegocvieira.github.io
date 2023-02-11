@@ -1,4 +1,4 @@
-export default function jobsNavigation() {
+export default function () {
     const jobLinks = document.querySelectorAll('.job-link');
 
     jobLinks.forEach(element => element.addEventListener('click', event => {
