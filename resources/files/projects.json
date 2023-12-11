@@ -111,7 +111,8 @@
     },
     {
         "title": "Naslojas",
-        "description": "Web App to the physical stores show their products. And to the users find and buy the best offers.",
+        "description_en": "A web Application to the physical stores show their products. And to the users find and buy the best offers.",
+        "description_pt": "Aplicação web para as lojas físicas exibirem seus produtos. E para os usuários encontrarem e comprarem as melhores ofertas.",
         "image": "/resources/images/projects/naslojas.webp",
         "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
         "website": "",
@@ -122,7 +123,8 @@
     },
     {
         "title": "Infochat",
-        "description": "A web app for visualizing professionals and stores profiles, so than get in touch and schedule a service.",
+        "description_en": "A web application for visualizing professionals and stores profiles, so than get in touch and schedule a service.",
+        "description_pt": "Uma aplicação web para visualização de perfis de profissionais e lojas, para os usuários entrarem em contato e agendarem seu atendimento.",
         "image": "/resources/images/projects/infochat.webp",
         "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
         "website": "",

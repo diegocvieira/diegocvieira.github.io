@@ -1,3 +1,4 @@
+import language from './_language.js';
 import header from './_header.js';
 import jobs from './_jobs.js';
 import jobsNavigation from './_jobs-navigation.js';
@@ -8,4 +9,5 @@ header();
 anchorLinks();
 await jobs();
 jobsNavigation();
-projects();
+await projects();
+language();

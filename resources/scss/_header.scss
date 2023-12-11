@@ -44,6 +44,9 @@ body.menu-is-open {
 
     .container {
         height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     nav {
@@ -119,6 +122,46 @@ body.menu-is-open {
             height: 3px;
             width: 100%;
             background-color: #fff;
+        }
+    }
+
+    .languages {
+        margin-left: 30px;
+        position: relative;
+
+        &-button {
+            display: flex;
+    
+            svg {
+                fill: $greyColor;
+                width: 22px;
+                height: 22px;
+            }
+        }
+    
+        &-dropdown {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $darkestBlueColor;
+            padding: 10px 0;
+            border-radius: 5px;
+            display: none;
+
+            .language-link {
+                padding: 10px 15px;
+                font-size: 15px;
+                display: flex;
+                color: $greyColor;
+                text-decoration: none;
+                font-family: "Roboto";
+                transition: .2s;
+
+                &:hover {
+                    color: $highlightColor;
+                }
+            }
         }
     }
 

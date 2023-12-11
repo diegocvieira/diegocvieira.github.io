@@ -1,6 +1,6 @@
 //! Add webview to naslojas and infochat
 export default function () {
-    fetch('/resources/files/projects.json').then(function(response) {
+    return fetch('/resources/files/projects.json').then(function(response) {
         return response.json();
     }).then(function(projects) {
         getFeaturedProjects(projects);
@@ -24,7 +24,7 @@ export default function () {
                         <h3 class="featured-project-content-title">${project.title}</h3>
                         <p class="featured-project-content-release">${project.release_year}</p>
                         <div class="featured-project-content-description">
-                            <p>${project.description}</p>
+                            <p data-lang_en="${project.description_en}" data-lang_pt="${project.description_pt}"></p>
                         </div>
                         <ul class="featured-project-content-stack">${stack}</ul>
                         <div class="featured-project-content-links">

@@ -27,36 +27,54 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#home" class="header-link anchor-link current">HOME</a>
+                            <a href="#home" class="header-link anchor-link current" data-lang_pt="INÍCIO" data-lang_en="HOME"></a>
                         </li>
 
                         <li>
-                            <a href="#about" class="header-link anchor-link">ABOUT</a>
+                            <a href="#about" class="header-link anchor-link" data-lang_pt="SOBRE" data-lang_en="ABOUT"></a>
                         </li>
 
                         <li>
-                            <a href="#jobs" class="header-link anchor-link">JOBS</a>
+                            <a href="#jobs" class="header-link anchor-link" data-lang_pt="TRABALHOS" data-lang_en="JOBS"></a>
                         </li>
 
                         <li>
-                            <a href="#projects" class="header-link anchor-link">PROJECTS</a>
+                            <a href="#projects" class="header-link anchor-link" data-lang_pt="PROJETOS" data-lang_en="PROJECTS"></a>
                         </li>
 
                         <li>
-                            <a href="#contact" class="header-link anchor-link">CONTACT</a>
+                            <a href="#contact" class="header-link anchor-link" data-lang_pt="CONTATO" data-lang_en="CONTACT"></a>
                         </li>
                     </ul>
                 </nav>
+
+                <div class="languages">
+                    <a href="#" class="languages-button" title="Change language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="M8 0C3.588 0 0 3.588 0 8s3.588 8 8 8 8-3.588 8-8-3.588-8-8-8zm0 1c.231 0 .485.117.773.43.29.312.583.81.832 1.449.234.597.423 1.32.565 2.121H5.83c.142-.8.331-1.524.565-2.121.249-.638.543-1.137.832-1.45C7.515 1.118 7.769 1 8 1zm-1.9.266c-.24.36-.452.776-.637 1.25A12.45 12.45 0 0 0 4.807 5H1.68A6.993 6.993 0 0 1 6.1 1.266zm3.8 0A6.993 6.993 0 0 1 14.32 5h-3.127a12.45 12.45 0 0 0-.656-2.484 6.578 6.578 0 0 0-.637-1.25zM1.293 6h3.394a19.071 19.071 0 0 0-.115 2c0 .696.048 1.357.115 2H1.293A7.003 7.003 0 0 1 1 8c0-.696.105-1.366.293-2zm4.402 0h4.61c.071.638.123 1.3.123 2s-.052 1.36-.123 2h-4.61c-.071-.64-.123-1.3-.123-2s.052-1.362.123-2zm5.617 0h3.395c.188.634.293 1.304.293 2s-.105 1.366-.293 2h-3.395c.068-.643.116-1.304.116-2s-.048-1.358-.116-2zm-9.63 5h3.125c.152.926.375 1.768.656 2.486.184.473.396.887.635 1.246A6.993 6.993 0 0 1 1.682 11zm4.15 0h4.336c-.141.8-.33 1.527-.563 2.123-.249.639-.543 1.136-.832 1.45-.288.312-.542.427-.773.427-.231 0-.485-.115-.773-.428-.29-.313-.583-.81-.832-1.449-.233-.596-.422-1.323-.563-2.123zm5.361 0h3.125a6.993 6.993 0 0 1-4.416 3.732c.239-.36.45-.773.635-1.246.28-.718.504-1.56.656-2.486z"></path>
+                        </svg>
+                    </a>
+
+                    <ul class="languages-dropdown">
+                        <li>
+                            <a href="#" class="language-link" data-lang="en" data-lang_pt="Inglês" data-lang_en="English"></a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="language-link" data-lang="pt" data-lang_pt="Português" data-lang_en="Portuguese"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
         <main>
             <section class="section" id="home">
                 <div class="container">
-                    <h1>Hello, my name is</h1>
-                    <h2>Diego Vieira.</h2>
-                    <h3>I build things for the web.</h3>
-                    <p>I'm a software engineer specializing in building digital experiences. Currently, I'm focused on manage a tech team and building accessible, human-centered products at <a href="https://www.inbenta.com" target="_blank">Inbenta</a>.</p>
+                    <h1 data-lang_pt="Olá, meu nome é" data-lang_en="Hello, my name is"></h1>
+                    <h2 data-lang_pt="Diego Vieira" data-lang_en="Diego Vieira"></h2>
+                    <h3 data-lang_pt="Eu construo coisas para a web." data-lang_en="I build things for the web."></h3>
+                    <p data-lang_pt="Eu sou um engenheiro de software especializado em construir esperiências digitais. Atualmente, estou focado em gerenciar um time de tecnologia e construir produtos acessíveis, centrados em humanos na <a href='https://www.inbenta.com' target='_blank'>Inbenta</a>." data-lang_en="I'm a software engineer specializing in building digital experiences. Currently, I'm focused on manage a tech team and building accessible, human-centered products at <a href='https://www.inbenta.com' target='_blank'>Inbenta</a>."></p>
                 </div>
 
                 <div class="arrow-container">
@@ -75,15 +93,15 @@
                             <path fill-rule="nonzero" d="M70.834,3C82.425,3.111 92.886,13.159 93,25.166C93.049,40.437 93.143,55.708 92.998,70.977C92.816,82.459 82.841,92.886 70.834,93C55.563,93.049 40.292,93.143 25.023,92.998C13.543,92.816 3.115,82.841 3,70.834C2.952,55.563 2.857,40.292 3.002,25.023C3.184,13.541 13.159,3.115 25.166,3C40.389,2.952 55.611,2.952 70.834,3ZM25.315,9C16.855,9.027 9.085,16.286 9,25.204C8.952,40.437 8.856,55.67 9.001,70.901C9.134,79.284 16.416,86.916 25.204,87C40.437,87.049 55.67,87.143 70.901,86.999C79.289,86.865 86.916,79.584 87,70.796C87.049,55.563 87.143,40.33 86.999,25.099C86.865,16.712 79.595,9.084 70.796,9C55.636,8.952 40.475,9 25.315,9Z" fill="#34a853" class="color000000 svgShape"></path><path fill-rule="nonzero" d="M48.249 15.415C59.178 15.622 68.671 26.285 67.113 37.408 65.838 46.504 57.241 54.013 48 54.013 36.881 54.013 26.945 42.8 29.002 31.301 30.558 22.599 38.598 15.589 47.751 15.415 48 15.413 48 15.413 48.249 15.415zM47.828 21.414C39.039 21.581 31.897 31.942 36.011 40.474 39.616 47.953 50.952 50.271 57.173 44.339 64.445 37.406 60.6 21.651 48.172 21.414 48 21.413 48 21.413 47.828 21.414zM48.298 58.014C60.127 58.177 71.525 65.212 76.794 76.046 77.903 78.326 75.659 81.393 73.097 80.375 71.196 79.619 70.68 77.118 69.461 75.34 62.102 64.604 46.158 60.832 34.704 67.67 30.298 70.3 26.725 74.255 24.498 78.887 24.498 78.887 23.476 80.51 21.938 80.584 19.586 80.696 18.093 78.102 19.714 75.047 25.15 64.797 36.377 57.96 48.298 58.014z"></path>
                         </svg>
 
-                        <h2 class="section-header-title">About me</h2>
+                        <h2 class="section-header-title" data-lang_pt="Sobre mim" data-lang_en="About me"></h2>
                     </div>
 
                     <div class="is-flex is-flex-wrap-wrap">
                         <div class="description">
-                            <p>Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet.</p>
-                            <p>My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS.</p>
-                            <p>Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers.</p>
-                            <p>Here are a few technologies I've been working with recently:</p>
+                            <p data-lang_pt="Olá mundo! Meu nome é Diego Vieira e eu sou um desenvolvedor de software que ama criar coisas para a internet." data-lang_en="Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet."></p>
+                            <p data-lang_pt="Meu interesse em desenvolvimento começou lá em 2013 quando eu entrei na faculdade e fui apresentado a minha primeira linguagem de programação, depois disso eu comecei a criar alguns projetos pessoais que me ensinaram muito sobre HTML, CSS, JS." data-lang_en="My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS."></p>
+                            <p data-lang_pt="Avançando para hoje, eu tive o privilégio de trabalhar em uma start-up, uma grande agência de marketing digital e em uma empresa de IA. Meu foco principal atualmente é construir produtos acessíveis, inclusivos e esperiências digitais na Inbenta para uma variedade de clientes." data-lang_en="Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers."></p>
+                            <p data-lang_pt="Aqui estão algumas tecnologias que trabalhei recentemente:" data-lang_en="Here are a few technologies I've been working with recently:"></p>
 
                             <ul>
                                 <li>PHP</li>
@@ -109,7 +127,7 @@
                             <path d="M30 8h-6V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v4H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM2 10h28v18H2V10zm8-6h12v4H10V4z"></path>
                         </svg>
 
-                        <h2 class="section-header-title">Where I've worked</h2>
+                        <h2 class="section-header-title" data-lang_pt="Onde eu trabalhei" data-lang_en="Where I've worked"></h2>
                     </div>
 
                     <div class="jobs-container">
@@ -131,7 +149,7 @@
                             <path d="M51.895 106.535a9.039 9.039 0 0 1-6.018-2.284L0 63.469l48.427-43.05a9.066 9.066 0 0 1 12.042 13.555L27.296 63.469l30.628 27.217a9.072 9.072 0 0 1-6.018 15.85Zm81.1-.017 48.427-43.05-45.876-40.782a9.065 9.065 0 0 0-12.038 13.554l30.628 27.228-33.176 29.484a9.068 9.068 0 0 0 12.036 13.566Zm-42.408 12.846 18.133-108.8a9.063 9.063 0 1 0-17.878-2.986l-18.134 108.8a9.066 9.066 0 0 0 7.452 10.438 9.616 9.616 0 0 0 1.5.119 9.068 9.068 0 0 0 8.931-7.571Z" class="color000000 svgShape"/>
                         </svg>
                         
-                        <h2 class="section-header-title">Some projects I've built</h2>
+                        <h2 class="section-header-title" data-lang_pt="Alguns projetos que construí" data-lang_en="Some projects I've built"></h2>
                     </div>
 
                     <div class="columns">
@@ -140,17 +158,17 @@
 
                     <div class="columns">
                         <div class="sub-section-header">
-                            <h3 class="sub-section-header-title">Other noteworthy projects</h3>
+                            <h3 class="sub-section-header-title" data-lang_pt="Outros projetos que valem a pena serem mencionados" data-lang_en="Other noteworthy projects"></h3>
                         </div>
 
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Year</th>
-                                    <th>Title</th>
-                                    <th class="is-hidden-mobile">Made at</th>
-                                    <th class="is-hidden-mobile">Build with</th>
-                                    <th>Link</th>
+                                    <th data-lang_pt="Ano" data-lang_en="Year"></th>
+                                    <th data-lang_pt="Título" data-lang_en="Title"></th>
+                                    <th data-lang_pt="Feito na" data-lang_en="Made at" class="is-hidden-mobile"></th>
+                                    <th data-lang_pt="Construído com" data-lang_en="Build with" class="is-hidden-mobile"></th>
+                                    <th data-lang_pt="Link" data-lang_en="Link"></th>
                                 </tr>
                             </thead>
 
@@ -167,10 +185,10 @@
                             <path d="M27 4.71H5a4.505 4.505 0 0 0-4.5 4.5v13.58c0 2.481 2.019 4.5 4.5 4.5h22c2.481 0 4.5-2.019 4.5-4.5V9.21c0-2.481-2.019-4.5-4.5-4.5zm-1.33 3L24.29 8.8l-7.36 5.81c-.55.43-1.31.43-1.86 0L7.97 9 6.333 7.71h19.338zM27 24.29H5c-.827 0-1.5-.673-1.5-1.5V9.305l9.71 7.665c.82.65 1.81.97 2.79.97s1.97-.32 2.79-.97l9.71-7.662V22.79c0 .827-.673 1.5-1.5 1.5z"/>
                         </svg>
                         
-                        <h2 class="section-header-title">Get in touch</h2>
+                        <h2 class="section-header-title" data-lang_pt="Entre em contato" data-lang_en="Get in touch"></h2>
                     </div>
 
-                    <p>Although I'm not looking for any new opportunity right now, I'm always open to talk. Whether you have a question or just want to say hi!</p>
+                    <p data-lang_pt="Embora não esteja em busca de nenhuma nova oportunidade no momento, estou sempre aberto para conversar. Se você tem alguma dúvida ou apenas quer dizer oi!" data-lang_en="Although I'm not looking for any new opportunity right now, I'm always open to talk. Whether you have a question or just want to say hi!"></p>
 
                     <ul>
                         <li>
@@ -221,7 +239,7 @@
                     </ul>
 
                     <div class="is-flex is-justify-content-center">
-                        <a href="mailto:vieiracdiego@gmail.com" target="_blank" class="is-button">Say Hello</a>
+                        <a href="mailto:vieiracdiego@gmail.com" target="_blank" class="is-button" data-lang_pt="Dê um Oi" data-lang_en="Say Hello"></a>
                     </div>
                 </div>
             </section>
@@ -229,7 +247,7 @@
 
         <footer>
             <div class="go-top">
-                <a href="#home" class="anchor-link is-flex" title="Ir para o topo">
+                <a href="#home" class="anchor-link is-flex" title="Go to top">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                         <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a8b2d1" stroke="none">
                             <path d="M2450 5048 c-186 -169 -1228 -1145 -1241 -1163 -12 -17 -15 -138 -17 -700 -2 -374 0 -695 3 -714 9 -46 46 -81 87 -81 30 0 85 53 655 622 l623 623 623 -623 c570 -569 625 -622 655 -622 41 0 78 35 87 81 3 19 5 340 3 714 -2 562 -5 683 -17 700 -13 18 -1055 994 -1241 1163 -62 55 -87 72 -110 72 -23 0 -48 -17 -110 -72z"/>
