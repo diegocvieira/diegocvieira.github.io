@@ -25,7 +25,7 @@ function generateJobsInfo(jobs) {
 
         return `
             <div class="job ${index !== 0 ? 'is-hidden' : ''}" id="${job.slug}">
-                <h3 class="job-title">${job.title} <span data-lang_pt="na" data-lang_en="at"></span> <a href="${job.link}" target="_blank">${job.name}</a></h3>
+                <h3 class="job-title">${job.title} · <a href="${job.link}" target="_blank">${job.name}</a></h3>
                 <p class="job-range" data-lang_pt="${getTranslatedRange(job.range, 'pt')}" data-lang_en="${getTranslatedRange(job.range, 'en')}"></p>
                 <ul class="job-description">${descriptionItems}</ul>
                 <ul class="job-stack">${stackItems}</ul>

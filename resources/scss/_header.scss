@@ -126,7 +126,6 @@ body.menu-is-open {
     }
 
     .languages {
-        margin-left: 30px;
         position: relative;
 
         &-button {
@@ -141,7 +140,7 @@ body.menu-is-open {
     
         &-dropdown {
             position: absolute;
-            top: 30px;
+            top: 40px;
             left: 50%;
             transform: translateX(-50%);
             background-color: $darkestBlueColor;

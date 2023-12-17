@@ -1,19 +1,13 @@
 export default function() {
     initializeLanguage();
 
-    window.addEventListener('click', function (event) {
-        const languagesDropdown = document.querySelector('.languages-dropdown');
-        const languagesButton = document.querySelector('.languages-button');
+    document.querySelector('.languages-button').addEventListener('click', function (event) {
+        event.preventDefault();
 
-        if (languagesDropdown && languagesButton && !languagesDropdown.contains(event.target)) {
-            event.preventDefault();
-
-            openOrCloseDropdown(event.target);
-        }
+        openOrCloseDropdown();
     });
 
-    const languagesLinks = document.querySelectorAll('.language-link');
-    languagesLinks.forEach(link => {
+    document.querySelectorAll('.language-link').forEach(link => {
         link.addEventListener('click', event => {
             event.preventDefault();
 
@@ -26,11 +20,11 @@ export default function() {
     });
 
     function initializeLanguage() {
-        const storedLanguage = localStorage.getItem('language') || 'pt';
+        const storedLanguage = localStorage.getItem('language') || 'en';
         const elements = document.querySelectorAll(`[data-lang_${storedLanguage}]`);
 
         elements.forEach(element => {
-            element.innerHTML = localStorage.getItem('language') === 'en' ? element.dataset.lang_en : element.dataset.lang_pt;
+            element.innerHTML = storedLanguage === 'en' ? element.dataset.lang_en : element.dataset.lang_pt;
         });
     }
 
@@ -38,14 +32,9 @@ export default function() {
         localStorage.setItem('language', lang);
     }
 
-    function openOrCloseDropdown(target = null) {
+    function openOrCloseDropdown() {
         const languagesDropdown = document.querySelector('.languages-dropdown');
 
-        if (languagesDropdown) {
-            const languagesButton = document.querySelector('.languages-button');
-            const isButtonClicked = languagesButton && languagesButton.contains(target);
-
-            languagesDropdown.style.display = (languagesDropdown.style.display !== 'block' && isButtonClicked) ? 'block' : 'none';
-        }
+        languagesDropdown.style.display = languagesDropdown.style.display !== 'block' ? 'block' : 'none';
     }
 }
