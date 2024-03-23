@@ -6,18 +6,18 @@
         "link": "https://www.inbenta.com",
         "range": "05/2022",
         "description_en": [
-            "Write modern, performant, maintainable code for a diverse array of customers and internal projects",
-            "Communicate with multi-disciplinary teams of developers, designers and managers around the world",
-            "Customers included BMW, Volkswagen, Modalmais, Neoenergia, Remessa Online and more",
-            "Manage the development team from Brazil"
+            "Managed the development team from Brazil",
+            "Wrote modern, performant, maintainable code for a diverse array of customers and internal projects",
+            "Communicated with multi-disciplinary teams of developers, designers and managers around the world",
+            "Customers included Simpletv, Volkswagen, Modalmais, Neoenergia, Remessa Online and more"
         ],
         "description_pt": [
+            "Gerenciei a equipe de desenvolvimento do Brasil",
             "Escrevi código moderno, de alto desempenho e sustentável para uma ampla gama de clientes e projetos internos",
             "Me comuniquei com equipes multidisciplinares de desenvolvedores, designers e gerentes em todo o mundo",
-            "Os clientes incluíam BMW, Volkswagen, Modalmais, Neoenergia, Remessa Online e outros",
-            "Gerenciei a equipe de desenvolvimento do Brasil"
+            "Os clientes incluíam BMW, Volkswagen, Modalmais, Neoenergia, Remessa Online e outros"
         ],
-        "stack": ["PHP", "Slim", "JavaScript", "Vue.js"]
+        "stack": ["PHP", "Slim", "JavaScript", "Vue.js", "Docker"]
     },
     {
         "name": "Sapient AG2",
@@ -26,8 +26,9 @@
         "link": "https://www.sapientag2.com.br",
         "range": "09/2021-05/2022",
         "description_en": [
-            "Worked full time with the customer Honda",
-            "Manage the development team"
+            "Developed and maintained new features for the customer Honda, using Drupal Multisite feature",
+            "Managed Honda develop team, helping them with back-end and fron-end development and also providing technical solutions",
+            "Worked as a front-end developer to help the team with the workload"
         ],
         "description_pt": [
             "Trabalhei em tempo integral com o cliente Honda",
@@ -48,17 +49,19 @@
         "link": "https://www.prodigious.com",
         "range": "09/2019-09/2021",
         "description_en": [
-            "Worked almost full time with the customer Toyota",
-            "Developed new features to the customer Portal, Ofertas, Lexus and also worked on internal projects"
+            "Developed and maintained new features for the customer Toyota, regarding their Main Portal, Offers Portal, Lexus and many others internal projects",
+            "Developed launching landing pages for customers Trident, Toyota and more"
         ],
         "description_pt": [
-            "Trabalhei quase em tempo integral com o cliente Toyota",
-            "Desenvolvi novas funcionalidades para o Portal de Cliente, Ofertas, Lexus e também atuei em projetos internos"
+            "Desenvolvi e fiz a manutenção de novas funcionalidades para o cliente Toyota, referentes ao seu Portal Principal, Portal de Ofertas, Lexus e muitos outros projetos internos",
+            "Desenvolvi landing pages de lançamento para os clientes Trident, Toyota e outros"
         ],
         "stack": [
             "PHP",
             "Laravel",
-            "Wordpress"
+            "Wordpress",
+            "JavaScript",
+            "Linux"
         ]
     },
     {
@@ -83,6 +86,7 @@
             "JavaScript",
             "jQuery",
             "HTML",
+            "CSS",
             "SCSS"
         ]
     },
@@ -93,10 +97,12 @@
         "link": "#",
         "range": "10/2017-09/2018",
         "description_en": [
-            "Architected and implemented the front-end, back-end, database and infrastructure of the entire project"
+            "Architected and implemented the technology of the entire project (front-end, back-end, database and infrastructure)",
+            "I became a partner in the company, also participating in strategic business decisions"
         ],
         "description_pt": [
-            "Arquitetei e implementei o front-end, back-end, banco de dados e infraestrutura de todo o projeto"
+            "Arquitetei e implementei a tecnologia de todo o projeto (front-end, back-end, banco de dados e infraestrutura)",
+            "Me tornei sócio da empresa, participando também de decisões estratégicas de negócio"
         ],
         "stack": [
             "PHP",
@@ -105,7 +111,8 @@
             "JavaScript",
             "jQuery",
             "HTML",
-            "SCSS"
+            "SCSS",
+            "Linux"
         ]
     }
 ]
