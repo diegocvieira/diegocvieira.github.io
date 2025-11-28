@@ -16,36 +16,37 @@
         <link rel="stylesheet" href="./dist/app.min.css">
     </head>
     <body>
-        <header id="header">
-            <div class="container">
-                <div id="menu-mobile">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div id="bg-cover"></div>
+
+        <div class="container">
+            <header id="header" class="scroll-lock">
+                <div class="">
+                    <h1><a href="/">Diego Vieira</a></h1>
+                    <h2>Software Engineer</h2>
+                    <h3 data-lang_pt="Eu construo experiências digitais para a web."
+                        data-lang_en="I build digital experiences for the web.">
+                        I build digital experiences for the web.
+                    </h3>
+
+                    <nav id="header-navigation">
+                        <ul>
+                            <li>
+                                <a href="#about" class="is-active header-link anchor-link" data-lang_pt="SOBRE" data-lang_en="ABOUT">ABOUT</a>
+                            </li>
+
+                            <li>
+                                <a href="#experience" class="header-link anchor-link" data-lang_pt="EXPERIÊNCIA" data-lang_en="EXPERIENCE">EXPERIENCE</a>
+                            </li>
+
+                            <li>
+                                <a href="#projects" class="header-link anchor-link" data-lang_pt="PROJETOS" data-lang_en="PROJECTS">PROJECTS</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <nav>
+                <nav id="footer-navigation">
                     <ul>
-                        <li>
-                            <a href="#home" class="header-link anchor-link current" data-lang_pt="INÍCIO" data-lang_en="HOME"></a>
-                        </li>
-
-                        <li>
-                            <a href="#about" class="header-link anchor-link" data-lang_pt="SOBRE" data-lang_en="ABOUT"></a>
-                        </li>
-
-                        <li>
-                            <a href="#jobs" class="header-link anchor-link" data-lang_pt="TRABALHOS" data-lang_en="JOBS"></a>
-                        </li>
-
-                        <li>
-                            <a href="#projects" class="header-link anchor-link" data-lang_pt="PROJETOS" data-lang_en="PROJECTS"></a>
-                        </li>
-
-                        <li>
-                            <a href="#contact" class="header-link anchor-link" data-lang_pt="CONTATO" data-lang_en="CONTACT"></a>
-                        </li>
-
                         <li class="languages">
                             <a href="#" class="languages-button" title="Change language">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -54,223 +55,670 @@
                                     </path>
                                 </svg>
                             </a>
-                        
+
                             <ul class="languages-dropdown">
                                 <li>
                                     <a href="#" class="language-link" data-lang="en" data-lang_pt="Inglês" data-lang_en="English"></a>
                                 </li>
-                        
+
                                 <li>
                                     <a href="#" class="language-link" data-lang="pt" data-lang_pt="Português" data-lang_en="Portuguese"></a>
                                 </li>
                             </ul>
                         </li>
+
+                        <li>
+                            <a href="https://github.com/diegocvieira" title="GitHub" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/diegocvieira" title="LinkedIn" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                                    <path
+                                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/diegovieira.dev" title="Instagram" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                                    <path
+                                        d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-            </div>
-        </header>
+            </header>
 
-        <main>
-            <section class="section" id="home">
-                <div class="container">
-                    <h1 data-lang_pt="Olá, meu nome é" data-lang_en="Hello, my name is"></h1>
-                    <h2>Diego Vieira.</h2>
-                    <h3 data-lang_pt="Eu construo coisas para a web." data-lang_en="I build things for the web."></h3>
-                    <p data-lang_pt="Eu sou um engenheiro de software especializado em construir esperiências digitais. Atualmente, estou focado em gerenciar um time de tecnologia e construir produtos acessíveis, centrados em humanos na <a href='https://www.inbenta.com' target='_blank'>Inbenta</a>." data-lang_en="I'm a software engineer specializing in building digital experiences. Currently, I'm focused on manage a tech team and building accessible, human-centered products at <a href='https://www.inbenta.com' target='_blank'>Inbenta</a>."></p>
-                </div>
-
-                <div class="arrow-container">
-                    <a class="anchor-link" href="#about" title="Check out about me">
-                        <svg id="down-arrow" data-name="mouse-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.52 16.52">
-                            <path d="M23.32,1.48l-8.84,8.84a1.73,1.73,0,0,1-2.44,0L3.2,1.48a1.7,1.7,0,0,0-2.43,0h0a1.72,1.72,0,0,0,0,2.43L12,15.18a1.71,1.71,0,0,0,2.44,0L25.75,3.91a1.72,1.72,0,0,0,0-2.43h0A1.7,1.7,0,0,0,23.32,1.48Z"/>
-                        </svg>
-                    </a>
-                </div>
-            </section>
-
-            <section class="section" id="about">
-                <div class="container">
-                    <div class="section-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" class="section-header-icon is-hidden-mobile">
-                            <path fill-rule="nonzero" d="M70.834,3C82.425,3.111 92.886,13.159 93,25.166C93.049,40.437 93.143,55.708 92.998,70.977C92.816,82.459 82.841,92.886 70.834,93C55.563,93.049 40.292,93.143 25.023,92.998C13.543,92.816 3.115,82.841 3,70.834C2.952,55.563 2.857,40.292 3.002,25.023C3.184,13.541 13.159,3.115 25.166,3C40.389,2.952 55.611,2.952 70.834,3ZM25.315,9C16.855,9.027 9.085,16.286 9,25.204C8.952,40.437 8.856,55.67 9.001,70.901C9.134,79.284 16.416,86.916 25.204,87C40.437,87.049 55.67,87.143 70.901,86.999C79.289,86.865 86.916,79.584 87,70.796C87.049,55.563 87.143,40.33 86.999,25.099C86.865,16.712 79.595,9.084 70.796,9C55.636,8.952 40.475,9 25.315,9Z" fill="#34a853" class="color000000 svgShape"></path><path fill-rule="nonzero" d="M48.249 15.415C59.178 15.622 68.671 26.285 67.113 37.408 65.838 46.504 57.241 54.013 48 54.013 36.881 54.013 26.945 42.8 29.002 31.301 30.558 22.599 38.598 15.589 47.751 15.415 48 15.413 48 15.413 48.249 15.415zM47.828 21.414C39.039 21.581 31.897 31.942 36.011 40.474 39.616 47.953 50.952 50.271 57.173 44.339 64.445 37.406 60.6 21.651 48.172 21.414 48 21.413 48 21.413 47.828 21.414zM48.298 58.014C60.127 58.177 71.525 65.212 76.794 76.046 77.903 78.326 75.659 81.393 73.097 80.375 71.196 79.619 70.68 77.118 69.461 75.34 62.102 64.604 46.158 60.832 34.704 67.67 30.298 70.3 26.725 74.255 24.498 78.887 24.498 78.887 23.476 80.51 21.938 80.584 19.586 80.696 18.093 78.102 19.714 75.047 25.15 64.797 36.377 57.96 48.298 58.014z"></path>
-                        </svg>
-
-                        <h2 class="section-header-title" data-lang_pt="Sobre mim" data-lang_en="About me"></h2>
+            <main>
+                <section class="section" id="about">
+                    <div class="section__title">
+                        <h2 data-lang_pt="SOBRE" data-lang_en="ABOUT">ABOUT</h2>
                     </div>
 
-                    <div class="is-flex is-flex-wrap-wrap">
-                        <div class="description">
-                            <p data-lang_pt="Olá mundo! Meu nome é Diego Vieira e eu sou um desenvolvedor de software que ama criar coisas para a internet." data-lang_en="Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet."></p>
-                            <p data-lang_pt="Meu interesse em desenvolvimento começou lá em 2013 quando eu entrei na faculdade e fui apresentado a minha primeira linguagem de programação, depois disso eu comecei a criar alguns projetos pessoais que me ensinaram muito sobre HTML, CSS, JS." data-lang_en="My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS."></p>
-                            <p data-lang_pt="Avançando para hoje, eu tive o privilégio de trabalhar em uma start-up, uma grande agência de marketing digital e em uma empresa de IA. Meu foco principal atualmente é construir produtos acessíveis, inclusivos e esperiências digitais na Inbenta para uma variedade de clientes." data-lang_en="Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers."></p>
-                            <p data-lang_pt="Aqui estão algumas tecnologias que trabalhei recentemente:" data-lang_en="Here are a few technologies I've been working with recently:"></p>
-
-                            <ul>
-                                <li>PHP</li>
-                                <li>Laravel</li>
-                                <li>Slim</li>
-                                <li>MySQL</li>
-                                <li>JavaScript</li>
-                                <li>VueJS</li>
-                            </ul>
-                        </div>
-
-                        <picture class="image">
-                            <img src="./resources/images/profile.webp" alt="Diego Vieira" />
-                        </picture>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="jobs">
-                <div class="container">
-                    <div class="section-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="section-header-icon is-hidden-mobile">
-                            <path d="M30 8h-6V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v4H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM2 10h28v18H2V10zm8-6h12v4H10V4z"></path>
-                        </svg>
-
-                        <h2 class="section-header-title" data-lang_pt="Onde eu trabalhei" data-lang_en="Where I've worked"></h2>
-                    </div>
-
-                    <div class="jobs-container">
-                        <div class="jobs-navigation">
-                            <div id="job-highlight"></div>
-
-                            <ul id="js-jobs-navigation"></ul>
-                        </div>
-
-                        <div id="js-jobs-info" class="jobs-info"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="projects">
-                <div class="container">
-                    <div class="section-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.424 126.936" class="section-header-icon is-hidden-mobile">
-                            <path d="M51.895 106.535a9.039 9.039 0 0 1-6.018-2.284L0 63.469l48.427-43.05a9.066 9.066 0 0 1 12.042 13.555L27.296 63.469l30.628 27.217a9.072 9.072 0 0 1-6.018 15.85Zm81.1-.017 48.427-43.05-45.876-40.782a9.065 9.065 0 0 0-12.038 13.554l30.628 27.228-33.176 29.484a9.068 9.068 0 0 0 12.036 13.566Zm-42.408 12.846 18.133-108.8a9.063 9.063 0 1 0-17.878-2.986l-18.134 108.8a9.066 9.066 0 0 0 7.452 10.438 9.616 9.616 0 0 0 1.5.119 9.068 9.068 0 0 0 8.931-7.571Z" class="color000000 svgShape"/>
-                        </svg>
-                        
-                        <h2 class="section-header-title" data-lang_pt="Alguns projetos que construí" data-lang_en="Some projects I've built"></h2>
-                    </div>
-
-                    <div class="columns">
-                        <div class="column" id="js-featured-projects"></div>
-                    </div>
-
-                    <div class="columns">
-                        <div class="sub-section-header">
-                            <h3 class="sub-section-header-title" data-lang_pt="Outros projetos que valem a pena serem mencionados" data-lang_en="Other noteworthy projects"></h3>
-                        </div>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th data-lang_pt="Ano" data-lang_en="Year"></th>
-                                    <th data-lang_pt="Título" data-lang_en="Title"></th>
-                                    <th data-lang_pt="Feito na" data-lang_en="Made at" class="is-hidden-mobile"></th>
-                                    <th data-lang_pt="Construído com" data-lang_en="Build with" class="is-hidden-mobile"></th>
-                                    <th data-lang_pt="Link" data-lang_en="Link"></th>
-                                </tr>
-                            </thead>
-
-                            <tbody id="js-projects"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="contact">
-                <div class="container">
-                    <div class="section-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="section-header-icon is-hidden-mobile">
-                            <path d="M27 4.71H5a4.505 4.505 0 0 0-4.5 4.5v13.58c0 2.481 2.019 4.5 4.5 4.5h22c2.481 0 4.5-2.019 4.5-4.5V9.21c0-2.481-2.019-4.5-4.5-4.5zm-1.33 3L24.29 8.8l-7.36 5.81c-.55.43-1.31.43-1.86 0L7.97 9 6.333 7.71h19.338zM27 24.29H5c-.827 0-1.5-.673-1.5-1.5V9.305l9.71 7.665c.82.65 1.81.97 2.79.97s1.97-.32 2.79-.97l9.71-7.662V22.79c0 .827-.673 1.5-1.5 1.5z"/>
-                        </svg>
-                        
-                        <h2 class="section-header-title" data-lang_pt="Entre em contato" data-lang_en="Get in touch"></h2>
-                    </div>
-
-                    <p data-lang_pt="Embora não esteja em busca de nenhuma nova oportunidade no momento, estou sempre aberto para conversar. Se você tem alguma dúvida ou apenas quer dizer oi!" data-lang_en="Although I'm not looking for any new opportunity right now, I'm always open to talk. Whether you have a question or just want to say hi!"></p>
+                    <p data-lang_pt="Olá mundo! Meu nome é Diego Vieira e eu sou um desenvolvedor de software que ama criar coisas para a internet."
+                        data-lang_en="Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet.">
+                        Hello world! My name is Diego Vieira and I'm a software engineer that enjoys creating things that live on the internet.
+                    </p>
+                    <p data-lang_pt="Meu interesse em desenvolvimento começou lá em 2013 quando eu entrei na faculdade e fui apresentado a minha primeira linguagem de programação, depois disso eu comecei a criar alguns projetos pessoais que me ensinaram muito sobre HTML, CSS, JS."
+                        data-lang_en="My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS.">
+                        My interest in development started back in 2013 when I joined college and was introduced to my first programming language, after that I started creating some personal projects that taught me a lot about HTML, CSS, JS.
+                    </p>
+                    <p data-lang_pt="Avançando para hoje, eu tive o privilégio de trabalhar em uma start-up, uma grande agência de marketing digital e em uma empresa de IA. Meu foco principal atualmente é construir produtos acessíveis, inclusivos e esperiências digitais na Inbenta para uma variedade de clientes."
+                        data-lang_en="Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers.">
+                        Fast-forward to today, and I've had the privilege of working at a start-up, a huge digital marketing agency and an AI company. My main focus these days is building accessible, inclusive products and digital experiences at Inbenta for a variety of customers.
+                    </p>
+                    <p data-lang_pt="Aqui estão algumas tecnologias que trabalhei recentemente:"
+                        data-lang_en="Here are a few technologies I've been working with recently:">
+                        Here are a few technologies I've been working with recently:
+                    </p>
 
                     <ul>
-                        <li>
-                            <a href="https://github.com/diegocvieira" class="social-github" title="GitHub" target="_blank">
-                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-                                    <circle cx="100" cy="100" r="50"/>
-                                </svg>
-
-                                <div class="social">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/diegocvieira" class="social-linkedin" title="LinkedIn" target="_blank">
-                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-                                    <circle cx="100" cy="100" r="50"/>
-                                </svg>
-        
-                                <div class="social">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                        <rect x="2" y="9" width="4" height="12"></rect>
-                                        <circle cx="4" cy="4" r="2"></circle>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.instagram.com/diegovieira.dev" class="social-instagram" title="Instagram" target="_blank">
-                                <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" class="circle">  
-                                    <circle cx="100" cy="100" r="50"/>
-                                </svg>
-
-                                <div class="social">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                    </svg>
-                                </div>
-                            </a>
-                        </li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Slim</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>Vue.js</li>
                     </ul>
+                </section>
 
-                    <div class="is-flex is-justify-content-center">
-                        <a href="mailto:vieiracdiego@gmail.com" target="_blank" class="is-button" data-lang_pt="Dê um Oi" data-lang_en="Say Hello"></a>
+                <section class="section" id="experience">
+                    <div class="section__title">
+                        <h2 data-lang_pt="EXPERIÊNCIA" data-lang_en="EXPERIENCE">EXPERIENCE</h2>
                     </div>
-                </div>
-            </section>
-        </main>
 
-        <footer>
-            <div class="go-top">
-                <a href="#home" class="anchor-link is-flex" title="Go to top">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#a8b2d1" stroke="none">
-                            <path d="M2450 5048 c-186 -169 -1228 -1145 -1241 -1163 -12 -17 -15 -138 -17 -700 -2 -374 0 -695 3 -714 9 -46 46 -81 87 -81 30 0 85 53 655 622 l623 623 623 -623 c570 -569 625 -622 655 -622 41 0 78 35 87 81 3 19 5 340 3 714 -2 562 -5 683 -17 700 -13 18 -1055 994 -1241 1163 -62 55 -87 72 -110 72 -23 0 -48 -17 -110 -72z"/>
-                            <path d="M2483 2688 c-173 -157 -1261 -1176 -1273 -1192 -13 -18 -15 -116 -18 -701 -2 -374 0 -695 3 -714 9 -46 46 -81 87 -81 30 0 85 53 655 622 l623 623 618 -617 c658 -658 650 -651 706 -614 14 9 30 33 36 53 8 27 10 248 8 723 -3 590 -5 688 -18 706 -12 16 -1100 1035 -1273 1192 -33 30 -55 42 -77 42 -22 0 -44 -12 -77 -42z"/>
-                        </g>
+                    <div class="card">
+                        <div class="card__date">
+                            <p data-lang_pt="MAI 2022 — PRESENT" data-lang_en="MAY 2022 — PRESENT">MAY 2022 — PRESENT</p>
+                        </div>
+
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://www.inbenta.com/" target="_blank" class="arrow-link">
+                                    Lead Software Engineer · Inbenta
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+
+                            <div class="card__content__description arrow-icon">
+                                <p data-lang_pt="Gerencio a equipe de desenvolvimento do Brasil." data-lang_en="Manage the development team from Brazil.">Manage the development team from Brazil.</p>
+                                <p data-lang_pt="Me comunico com equipes multidisciplinares de desenvolvedores, designers e gerentes em todo o mundo." data-lang_en="Communicate with multi-disciplinary teams of developers, designers and managers around the world.">Communicate with multi-disciplinary teams of developers, designers and managers around the world.</p>
+                                <p data-lang_pt="Escrevo código moderno, de alto desempenho e de fácil manutenção para uma ampla gama de clientes e projetos internos." data-lang_en="Write modern, performant, maintainable code for a diverse array of customers and internal projects.">Write modern, performant, maintainable code for a diverse array of customers and internal projects.</p>
+                                <p data-lang_pt="Os clientes incluem Simpletv, BBVA, BMW, GSK, Volkswagen, Modalmais, Neoenergia e outros." data-lang_en="Customers included Simpletv, BBVA, BMW, GSK, Volkswagen, Modalmais, Neoenergia and more.">Customers included Simpletv, BBVA, BMW, GSK, Volkswagen, Modalmais, Neoenergia and more.</p>
+                            </div>
+
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Slim</li>
+                                <li>JavaScript</li>
+                                <li>Vue.js</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__date">
+                            <p data-lang_pt="SET 2021 — MAI 2022" data-lang_en="SEP 2021 — MAY 2022">SEP 2021 — MAY 2022</p>
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://www.sapientag2.com.br/" target="_blank" class="arrow-link">
+                                    Back-End Developer · Sapient AG2
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description arrow-icon">
+                                <p data-lang_pt="Desenvolvi e mantive novas funcionalidades para o cliente Honda, aproveitando a funcionalidade Drupal Multisite para integrar todas as unidades de negócio, incluindo carros, motos, etc." data-lang_en="Developed and maintained new features for the Honda customer, leveraging the Drupal Multisite functionality to integrate all business units, including cars, motorcycles, etc.">Developed and maintained new features for the Honda customer, leveraging the Drupal Multisite functionality to integrate all business units, including cars, motorcycles, etc.</p>
+                                <p data-lang_pt="Liderei a equipe de desenvolvimento da Honda, fornecendo suporte aos membros do time tanto no desenvolvimento back-end quanto no front-end." data-lang_en="Led the Honda development team, providing support to the team in both back-end and front-end development.">Led the Honda development team, providing support to the team in both back-end and front-end development.</p>
+                                <p data-lang_pt="Trabalhei como desenvolvedor front-end, usando minha experiência para auxiliar o time nas entregas." data-lang_en="Worked as a front-end developer, using my experience to help the team in handling the workload.">Worked as a front-end developer, using my experience to help the team in handling the workload.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Drupal</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>Stylus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__date">
+                            <p data-lang_pt="SET 2019 — SET 2021" data-lang_en="SEP 2019 — SEP 2021">SEP 2019 — SEP 2021</p>
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://www.prodigious.com/" target="_blank" class="arrow-link">
+                                    Back-End Developer · Prodigious
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description arrow-icon">
+                                <p data-lang_pt="Desenvolvi e mantive novas funcionalidades para os projetos da Toyota, incluindo o Portal Principal, Portal de Ofertas, Lexus e outras iniciativas internas." data-lang_en="Developed and maintened new features for Toyota's projects, including their Main Portal, Offers Portal, Lexus, and several other internal initiatives.">Developed and maintened new features for Toyota's projects, including their Main Portal, Offers Portal, Lexus, and several other internal initiatives.</p>
+                                <p data-lang_pt="Melhorei processos através de automações. Como a Atualização de Concessionárias para automaticamente atualizar os dados das concessionárias através de todas as aplicações." data-lang_en="Improved processes through automations. Such as the Dealers Update to automatically update the dealers data across all the applications.">Improved processes through automations. Such as the Dealers Update to automatically update the dealers data across all the applications.</p>
+                                <p data-lang_pt="Criei landing pages de lançamento para diversos clientes da agência." data-lang_en="Created launching landing pages for many customers from the Agency.">Created launching landing pages for many customers from the Agency.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>Wordpress</li>
+                                <li>JavaScript</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__date">
+                            <p data-lang_pt="JAN 2019 — AGO 2019" data-lang_en="JAN 2019 — AUG 2019">JAN 2019 — AUG 2019</p>
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://www.human2be.com.br/" target="_blank" class="arrow-link">
+                                    Front-End Developer · Human2be
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description arrow-icon">
+                                <p data-lang_pt="Desenvolvi e mantive sites e landing pages para muitos clientes." data-lang_en="Developed and maintained websites and landing pages for several customers.">Developed and maintained websites and landing pages for several customers.</p>
+                                <p data-lang_pt="Trabalhei como desenvolvedor back-end em projetos mais complexos para entregar soluções mais elaboradas e customizadas." data-lang_en="Worked as a back-end developer on complex projects to deliver more elaborate and customized solutions.">Worked as a back-end developer on complex projects to deliver more elaborate and customized solutions.</p>
+                                <p data-lang_pt="Parte do meu trabalho era conduzir testes de qualidade, testando os projetos através de diferentes navegadores e dispositivos." data-lang_en="Conducted quality assurance as part of my responsibilities, testing projects across many browsers and devices.">Conducted quality assurance as part of my responsibilities, testing projects across many browsers and devices.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__date">
+                            <p data-lang_pt="OUT 2017 — ABR 2020" data-lang_en="OCT 2017 — APR 2020">OCT 2017 — APR 2020</p>
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="javascript:void(0);">Full-Stack Developer · Naslojas</a>
+                            </h3>
+                    
+                            <div class="card__content__description arrow-icon">
+                                <p>Led the implementation of the entire project's technology, covering front-end, back-end, database, and infrastructure.</p>
+                                <p>Beyond my tech role, I became a partner in the company, contributing not only in the technical aspects but also in making business decisions.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>SCSS</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="projects">
+                    <div class="section__title">
+                        <h2 data-lang_pt="PROJETOS" data-lang_en="PROJECTS">PROJECTS</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="/resources/images/projects/naslojas.webp" alt="Naslojas" />
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://github.com/diegocvieira/naslojas/" target="_blank" class="arrow-link">
+                                    Naslojas
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description">
+                                <p>A web Application to the physical stores show their products and to the users find the best offers to buy.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>SCSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="/resources/images/projects/infochat.webp" alt="Infochat" />
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://github.com/diegocvieira/Infochat/" target="_blank" class="arrow-link">
+                                    Infochat
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description">
+                                <p>A web application for visualizing professionals and stores profiles, so than get in touch and schedule a service.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>SCSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="/resources/images/projects/seusuper.webp" alt="SeuSuper" />
+                        </div>
+                    
+                        <div class="card__content">
+                            <h3>
+                                <a href="https://github.com/diegocvieira/seu-super/" target="_blank" class="arrow-link">
+                                    SeuSuper
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </h3>
+                    
+                            <div class="card__content__description">
+                                <p>A web application for visualizing professionals and stores profiles, so than get in touch and schedule a service.</p>
+                            </div>
+                    
+                            <ul class="card__content__stack">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>SCSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#archive" id="open-archive-modal" class="arrow-link arrow-right">
+                        <span data-lang_pt="Ver todos os projetos" data-lang_en="View all projects">View all projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="arrow-icon">
+                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </section>
+
+                <footer id="footer">
+                    <div class="quote">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="quote-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                        </svg>
+
+                        <p class="quote-text">Stay hungry, stay foolish. - Steve Jobs</p>
+                    </div>
+
+                    <div class="copyright">
+                        <p>Copyright © 2024 | All Rights Reserved</p>
+                    </div>
+                </footer>
+            </main>
+        </div>
+
+        <div id="archive-modal">
+            <div class="container">
+                <a href="#" id="close-archive-modal" class="arrow-link arrow-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clip-rule="evenodd"></path>
                     </svg>
+                    Diego Vieira
                 </a>
+            
+                <h2 data-lang_pt="Todos os projetos" data-lang_en="All projects">All Projects</h2>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-lang_pt="Ano" data-lang_en="Year"></th>
+                            <th data-lang_pt="Título" data-lang_en="Title"></th>
+                            <th data-lang_pt="Feito na" data-lang_en="Made at" class="is-hidden-desktop"></th>
+                            <th data-lang_pt="Construído com" data-lang_en="Build with" class="is-hidden-desktop"></th>
+                            <th data-lang_pt="Link" data-lang_en="Link"></th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr>
+                            <td>2021</td>
+                            <td>Fronteiras do Pensamento</td>
+                            <td class="is-hidden-desktop"></td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.fronteiras.com" target="_blank" class="arrow-link">
+                                    fronteiras.com
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>UCPel</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.ucpel.edu.br" target="_blank" class="arrow-link">
+                                    ucpel.edu.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>TV UCPel</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://tv.ucpel.edu.br" target="_blank" class="arrow-link">
+                                    tv.ucpel.edu.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>Carreiras UCPel</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://carreiras.ucpel.edu.br" target="_blank" class="arrow-link">
+                                    carreiras.ucpel.edu.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>Idealiza</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.vivaidealiza.com.br" target="_blank" class="arrow-link">
+                                    vivaidealiza.com.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>GX Investimentos</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.gxinveste.com.br" target="_blank" class="arrow-link">
+                                    gxinveste.com.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>Royal Park</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>JavaScript</li>
+                                    <li>CSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://royalpark.zabaleta.com.br" target="_blank" class="arrow-link">
+                                    royalpark.zabaleta.com.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>Gelei</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.emporiogelei.com.br" target="_blank" class="arrow-link">
+                                    emporiogelei.com.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>UNE Franquias</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.unefranquias.com.br" target="_blank" class="arrow-link">
+                                    unefranquias.com.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>2019</td>
+                            <td>ZECON Construtora</td>
+                            <td class="is-hidden-desktop">Human2be</td>
+                            <td class="is-hidden-desktop">
+                                <ul class="card__content__stack">
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>Voyager</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>SCSS</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <a href="https://www.zecon.eng.br" target="_blank" class="arrow-link">
+                                    zecon.eng.br
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="quote">
-                <svg xmlns="http://www.w3.org/2000/svg" class="quote-icon" viewBox="0 0 24 24">
-                    <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/>
-                </svg>
-
-                <p class="quote-text">Stay hungry, stay foolish. - Steve Jobs</p>
-            </div>
-
-            <div class="copyright">
-                <p>Copyright © 2022 | All Rights Reserved</p> 
-            </div>
-        </footer>
+        </div>
 
         <script type="text/javascript" src="./dist/app.min.js"></script>
     </body>

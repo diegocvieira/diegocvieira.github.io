@@ -1,12 +1,10 @@
-@import "variables";
-@import "reset";
-@import "default";
-@import "helper";
+@import 'variables';
+@import 'reset';
+@import 'default';
+@import 'helper';
 
-@import "header";
-@import "home";
-@import "about";
-@import "jobs";
-@import "projects";
-@import "contact";
-@import "footer";
+@import 'header';
+@import 'about';
+@import 'card';
+@import 'archive';
+@import 'footer';

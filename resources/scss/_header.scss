@@ -1,193 +1,158 @@
-body.menu-is-open {
-    overflow: hidden;
-
-    #header {
-        nav {
-            transform: translateX(0);
-        }
-
-        #menu-mobile span {
-            &:first-child {
-                transform: rotate(135deg);
-                margin-top: 8px;
-            }
-
-            &:nth-child(2) {
-                opacity: 0;
-            }
-
-            &:last-child {
-                transform: rotate(-135deg);
-                margin-top: -11px;
-            }
-        }
-    }
-}
-
 #header {
-    position: fixed;
+    width: 45%;
+    max-height: 100vh;
     top: 0;
-    left: 0;
-    background-color: $darkBlueColor;
-    width: 100%;
-    height: 70px;
-    z-index: 3;
-    transition: .2s;
+    position: sticky;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-    &.is-scrolled {
-        box-shadow: 0 10px 30px -10px rgba(2, 12, 27, .7);
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $whiteColor;
+
+        a {
+            color: $whiteColor;
+            text-decoration: none;
+        }
     }
 
-    &.is-scrolled-down {
-        top: -50%;
+    h2 {
+        font-size: 1.2rem;
+        color: $whiteColor;
+        margin: 15px 0;
     }
 
-    .container {
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    h3 {
+        font-size: 1rem;
+        color: $greyColor;
+        max-width: 60%;
+        line-height: 1.5;
     }
 
-    nav {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    #header-navigation {
+        margin-top: 50px;
+
+        ul {
+            li {
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    color: #475569;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: .8rem;
+                    letter-spacing: .1em;
+                    padding: 10px 0;
+
+                    &:hover,
+                    &.is-active {
+                        color: $whiteColor;
+
+                        &:before {
+                            background-color: $whiteColor;
+                            width: 4rem;
+                        }
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 2rem;
+                        background-color: #475569;
+                        height: 1px;
+                        margin-right: 15px;
+                        transition: .2s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-navigation {
+        margin-top: 30px;
 
         ul {
             display: flex;
 
             li {
-                margin: 0 10px;
+                &:not(:first-child) {
+                    margin-left: 20px;
+                }
 
                 a {
-                    padding: 10px;
-                    font-size: 15px;
-                    display: flex;
                     color: $greyColor;
-                    position: relative;
-                    text-decoration: none;
-                    font-family: "Roboto";
 
-                    &:before, &:after {
-                        content: '';
-                        height: 14px;
-                        width: 14px;
-                        position: absolute;
-                        transition: all 0.35s ease;
-                        opacity: 0;
-                    }
-
-                    &:before {
-                        left: 0;
-                        top: 0;
-                        border-left: 3px solid $highlightColor;
-                        border-top: 3px solid $highlightColor;
-                        transform: translate(100%, 50%);
-                    }
-
-                    &:after {
-                        right: 0;
-                        bottom: 0;
-                        border-right: 3px solid $highlightColor;
-                        border-bottom: 3px solid $highlightColor;
-                        transform: translate(-100%, -50%);
-                    }
-
-                    &:hover, &.current {
+                    &:hover {
                         color: $whiteColor;
                     }
 
-                    &:hover:before, &.current:before, &:hover:after, &.current:after {
-                        transform: translate(0%, 0%);
-                        opacity: 1;
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                &.languages {
+                    position: relative;
+
+                    .languages-button {
+                        display: flex;
+
+                        &:hover svg {
+                            fill: $whiteColor
+                        }
+
+                        svg {
+                            fill: $greyColor;
+                            width: 22px;
+                            height: 22px;
+                            transition: .5s;
+                        }
+                    }
+
+                    .languages-dropdown {
+                        position: absolute;
+                        top: -110px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: $darkestBlueColor;
+                        padding: 10px 0;
+                        border-radius: 5px;
+                        display: none;
+
+                        li {
+                            margin: 0;
+
+                            .language-link {
+                                padding: 10px 15px;
+                                font-size: 15px;
+                                display: flex;
+                                color: $greyColor;
+                                text-decoration: none;
+                                transition: .2s;
+
+                                &:hover {
+                                    color: $whiteColor;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
+}
 
-    #menu-mobile {
-        height: 22px;
-        width: 22px;
-        display: none;
-        margin: 25px 20px 0 auto;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 1;
-
-        span {
-            transition: all 0.3s;
-            height: 3px;
-            width: 100%;
-            background-color: #fff;
-        }
-    }
-
-    .languages {
+@media screen and (max-width: $desktop) {
+    #header {
+        width: 100%;
+        padding-bottom: 0;
         position: relative;
 
-        &-button {
-            display: flex;
-    
-            svg {
-                fill: $greyColor;
-                width: 22px;
-                height: 22px;
-            }
-        }
-    
-        &-dropdown {
-            position: absolute;
-            top: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: $darkestBlueColor;
-            padding: 10px 0;
-            border-radius: 5px;
+        #header-navigation {
             display: none;
-
-            .language-link {
-                padding: 10px 15px;
-                font-size: 15px;
-                display: flex;
-                color: $greyColor;
-                text-decoration: none;
-                font-family: "Roboto";
-                transition: .2s;
-
-                &:hover {
-                    color: $highlightColor;
-                }
-            }
-        }
-    }
-
-    @media (max-width: $tablet) {
-        nav {
-            height: 100%;
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            transform: translateX(100%);
-            transition: transform 250ms ease-in-out;
-            background: $darkestBlueColor;
-
-            ul {
-                flex-direction: column;
-                width: 100%;
-
-                li {
-                    margin: 10px auto;
-                    width: max-content;
-                }
-            }
-        }
-
-        #menu-mobile {
-            display: flex;
         }
     }
 }

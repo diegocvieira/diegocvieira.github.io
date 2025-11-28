@@ -1,16 +1,12 @@
 @font-face {
-    font-family: "Calibre";
-    src: url(../fonts/calibre-regular.otf);
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/roboto-regular.ttf);
+    font-family: 'Inter';
+    src: url(../fonts/inter.ttf);
 }
 
 body {
-    font-family: "Calibre";
+    font-family: 'Inter', sans-serif;
     background-color: $darkBlueColor;
+    position: relative;
 }
 
 * {
@@ -41,7 +37,6 @@ a {
 
     &:hover {
         color: $highlightColor;
-        text-decoration: underline;
     }
 
     &.is-button {
@@ -60,86 +55,107 @@ a {
             color: $highlightColor;
             text-decoration: none;
         }
-    }   
+    }
+}
+
+#bg-cover {
+    position: absolute;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    z-index: 30;
+    inset: 0;
+    pointer-events: none;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1280px;
     flex-grow: 1;
     margin: 0 auto;
     position: relative;
     width: auto;
+    padding: 0 6rem;
+    display: flex;
+}
+
+main {
+    flex: 1;
+    padding: 6rem 0;
 }
 
 .section {
-    padding: 150px 15px;
+    margin-bottom: 9rem;
 
-    &:nth-child(even) {
-        background-color: $darkestBlueColor;
-    }
+    &__title {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 1.25rem 3rem;
+        margin: 0 -3rem;
+        backdrop-filter: blur(8px);
+        background-color: rgba(15, 23, 42, .75);
+        display: none;
 
-    &-header {
-        display: flex;
-        white-space: nowrap;
-        align-items: center;
-        margin-bottom: 30px;
-
-        &::after {
-            content: '';
-            width: 100%;
-            height: 1px;
-            background-color: $greyColor;
-            position: relative;
-            top: -2px;
-        }
-
-        &-icon {
-            width: 50px;
-            position: relative;
-            top: -3px;
-            margin: 0 10px 0 0;
-
-            path {
-                fill: $greyColor;
-            }
-        }
-
-        &-title {
-            font-size: 30px;
+        h2 {
             color: $whiteColor;
             font-weight: 700;
-            margin: 0 10px 0 0;
+            font-size: 1rem;
         }
     }
 }
 
-.sub-section-header {
-    margin: 50px 0;
+.arrow-link {
     display: flex;
-    justify-content: center;
+    align-items: center;
 
-    &-title {
-        font-size: 30px;
-        color: $whiteColor;
-        font-weight: 700;
+    &:hover {
+        color: $blueColor !important;
+
+        & svg {
+            transform: translate(0.25rem, -0.25rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        }
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+    }
+
+    &.arrow-left {
+        &:hover svg {
+            transform: translate(-0.5rem, 0) rotate(180deg);
+        }
+
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &.arrow-right:hover svg {
+        transform: translate(0.5rem, 0);
     }
 }
 
-@media (max-width: $tablet) {
-    .section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-        &-header {
-            &-title {
-                font-size: 24px;
-            }
-        }
+@media screen and (max-width: $desktop) {
+    .section__title {
+        display: block;
     }
 
-    .sub-section-header {
-        &-title {
-            font-size: 24px;
-        }
+    .container {
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .section__title {
+        padding: 1.25rem 1.5rem;
+        margin: 0 -1.5rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
     }
 }

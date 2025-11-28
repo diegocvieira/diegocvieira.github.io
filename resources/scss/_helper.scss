@@ -19,3 +19,9 @@
         display: none;
     }
 }
+
+@media (max-width: $desktop) {
+    .is-hidden-desktop {
+        display: none;
+    }
+}
