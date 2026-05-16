@@ -5,7 +5,9 @@ import anchorLinks from './_anchor-links.js';
 import mouseMoveEffect from './_mouse-move-effect.js';
 import mouseHoverEffect from './_mouse-hover-effect.js';
 import scrollLock from './_scroll-lock.js';
+import jobs from './_jobs.js';
 
+await jobs();
 language();
 header();
 archive();

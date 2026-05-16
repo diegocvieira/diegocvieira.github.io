@@ -1,9 +1,11 @@
-export default function() {
+import translations from '../files/languages.json';
+
+export default function () {
+
     initializeLanguage();
 
-    document.querySelector('.languages-button').addEventListener('click', function (event) {
+    document.querySelector('.languages-button')?.addEventListener('click', event => {
         event.preventDefault();
-
         openOrCloseDropdown();
     });
 
@@ -14,17 +16,36 @@ export default function() {
             const selectedLanguage = event.target.dataset.lang;
 
             setLanguage(selectedLanguage);
-            initializeLanguage();
+            applyTranslations(selectedLanguage);
             openOrCloseDropdown();
         });
     });
 
     function initializeLanguage() {
-        const storedLanguage = localStorage.getItem('language') || 'en';
-        const elements = document.querySelectorAll(`[data-lang_${storedLanguage}]`);
+        const storedLanguage = localStorage.getItem('language') || getBrowserLanguage();
+        applyTranslations(storedLanguage);
+    }
+
+    function applyTranslations(lang) {
+        if (!translations[lang]) {
+            lang = 'en';
+        }
+
+        document.documentElement.lang = lang;
+
+        const elements = document.querySelectorAll('[data-i18n]');
 
         elements.forEach(element => {
-            element.innerHTML = storedLanguage === 'en' ? element.dataset.lang_en : element.dataset.lang_pt;
+            const key = element.dataset.i18n;
+            const value = translations[lang][key];
+
+            if (!value) return;
+
+            if (element.hasAttribute('data-i18n-html')) {
+                element.innerHTML = value;
+            } else {
+                element.textContent = value;
+            }
         });
     }
 
@@ -32,9 +53,17 @@ export default function() {
         localStorage.setItem('language', lang);
     }
 
+    function getBrowserLanguage() {
+        const browserLang = navigator.language.slice(0, 2);
+
+        return translations[browserLang] ? browserLang : 'en';
+    }
+
     function openOrCloseDropdown() {
         const languagesDropdown = document.querySelector('.languages-dropdown');
+        if (!languagesDropdown) return;
 
-        languagesDropdown.style.display = languagesDropdown.style.display !== 'block' ? 'block' : 'none';
+        languagesDropdown.style.display =
+            languagesDropdown.style.display !== 'block' ? 'block' : 'none';
     }
 }

@@ -5,13 +5,14 @@
     "homepage": "https://diegocvieira.github.io/",
     "private": true,
     "scripts": {
+        "dev": "npm run watch",
         "watch": "export NODE_ENV=development && webpack",
         "build": "export NODE_ENV=production && webpack"
     },
     "dependencies": {
         "css-loader": "6.7.1",
         "mini-css-extract-plugin": "2.7.2",
-        "node-sass": "^7.0.3",
+        "sass": "^1.77.0",
         "sass-loader": "13.0.2",
         "webpack": "5.75.0",
         "webpack-cli": "5.0.1"
