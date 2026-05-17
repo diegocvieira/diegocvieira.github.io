@@ -136,6 +136,54 @@ main {
     }
 }
 
+.languages {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    &-button {
+        display: flex;
+
+        &:hover svg {
+            fill: $whiteColor;
+        }
+
+        svg {
+            fill: $greyColor;
+            width: 22px;
+            height: 22px;
+            transition: .5s;
+        }
+    }
+
+    &-dropdown {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: rgba(30, 41, 59);
+        padding: 10px 0;
+        border-radius: 5px;
+        display: none;
+
+        li {
+            margin: 0;
+
+            .language-link {
+                padding: 10px 15px;
+                font-size: 15px;
+                display: flex;
+                color: $greyColor;
+                text-decoration: none;
+                transition: .2s;
+
+                &:hover {
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $desktop) {
     .section__title {
         display: block;

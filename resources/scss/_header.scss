@@ -95,53 +95,6 @@
                         height: 24px;
                     }
                 }
-
-                &.languages {
-                    position: relative;
-
-                    .languages-button {
-                        display: flex;
-
-                        &:hover svg {
-                            fill: $whiteColor
-                        }
-
-                        svg {
-                            fill: $greyColor;
-                            width: 22px;
-                            height: 22px;
-                            transition: .5s;
-                        }
-                    }
-
-                    .languages-dropdown {
-                        position: absolute;
-                        top: -110px;
-                        left: 0;
-                        background-color: rgba(30, 41, 59, .5);
-                        box-shadow: 0 0 #0000, 0 0 #0000, inset 0 1px 0 0 rgba(148, 163, 184, .1);
-                        padding: 10px 0;
-                        border-radius: 5px;
-                        display: none;
-
-                        li {
-                            margin: 0;
-
-                            .language-link {
-                                padding: 10px 15px;
-                                font-size: 15px;
-                                display: flex;
-                                color: $greyColor;
-                                text-decoration: none;
-                                transition: .2s;
-
-                                &:hover {
-                                    color: $whiteColor;
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
     }
