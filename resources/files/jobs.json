@@ -2,22 +2,22 @@
     {
         "name": "Inbenta",
         "slug": "inbenta",
-        "title": "Tech Lead",
+        "title": "Lead Software Engineer",
         "link": "https://www.inbenta.com",
-        "stack": ["PHP", "Slim", "JavaScript", "Vue.js", "Docker"]
+        "stack": ["PHP", "Slim", "JavaScript", "Vue.js", "Docker", "MySQL"]
     },
     {
-        "name": "Prodigious",
-        "slug": "prodigious",
+        "name": "Publicis Brasil",
+        "slug": "publicis",
         "title": "Back-End Developer",
-        "link": "https://www.prodigious.com",
+        "link": "https://publicis.com.br",
         "stack": [
-            "JavaScript",
             "Wordpress",
             "PHP",
             "Laravel",
+            "Drupal",
             "Linux",
-            "Drupal"
+            "JavaScript"
         ]
     },
     {
@@ -25,15 +25,14 @@
         "slug": "human2be",
         "title": "Front-End Developer",
         "link": "https://www.human2be.com.br",
-
         "stack": [
-            "PHP",
-            "Laravel",
             "JavaScript",
             "jQuery",
-            "HTML",
             "CSS",
-            "SCSS"
+            "HTML",
+            "PHP",
+            "Laravel",
+            "Voyager"   
         ]
     },
     {

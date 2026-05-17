@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @font-face {
     font-family: 'Inter';
     src: url(../fonts/inter.ttf);
@@ -68,7 +70,7 @@ a {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1500px;
     flex-grow: 1;
     margin: 0 auto;
     position: relative;
@@ -121,6 +123,7 @@ main {
         transition-property: transform;
         transition-timing-function: cubic-bezier(.4, 0, .2, 1);
         transition-duration: .15s;
+        margin-left: 5px;
     }
 
     &.arrow-left {

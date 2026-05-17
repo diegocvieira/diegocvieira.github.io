@@ -26,6 +26,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
+                            api: 'modern-compiler',
                             implementation: require('sass')
                         }
                     }

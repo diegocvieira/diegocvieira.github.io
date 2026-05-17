@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .card {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
