@@ -3,7 +3,6 @@ import header from './_header.js';
 import archive from './_archive.js';
 import anchorLinks from './_anchor-links.js';
 import mouseMoveEffect from './_mouse-move-effect.js';
-import scrollLock from './_scroll-lock.js';
 import jobs from './_jobs.js';
 import copyright from './_copyright.js';
 
@@ -13,5 +12,4 @@ header();
 archive();
 anchorLinks();
 mouseMoveEffect();
-scrollLock();
 copyright();

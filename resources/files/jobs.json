@@ -11,44 +11,20 @@
         "slug": "publicis",
         "title": "Back-End Developer",
         "link": "https://publicis.com.br",
-        "stack": [
-            "Wordpress",
-            "PHP",
-            "Laravel",
-            "Drupal",
-            "Linux",
-            "JavaScript"
-        ]
+        "stack": ["Wordpress", "PHP", "Laravel", "Drupal", "Linux", "JavaScript"]
     },
     {
         "name": "Human2be",
         "slug": "human2be",
         "title": "Front-End Developer",
         "link": "https://www.human2be.com.br",
-        "stack": [
-            "JavaScript",
-            "jQuery",
-            "CSS",
-            "HTML",
-            "PHP",
-            "Laravel",
-            "Voyager"   
-        ]
+        "stack": ["JavaScript", "jQuery", "CSS", "HTML", "PHP", "Laravel", "Voyager"]
     },
     {
         "name": "Naslojas",
         "slug": "naslojas",
         "title": "Full-Stack Developer",
         "link": "",
-        "stack": [
-            "PHP",
-            "Laravel",
-            "MySQL",
-            "JavaScript",
-            "jQuery",
-            "HTML",
-            "SCSS",
-            "Linux"
-        ]
+        "stack": ["PHP", "Laravel", "MySQL", "JavaScript", "jQuery", "HTML", "SCSS", "Linux"]
     }
 ]
