@@ -4,27 +4,14 @@
     p {
         color: $greyColor;
         font-size: 1rem;
-        margin-bottom: 20px;
         line-height: 1.6;
-    }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 100px;
-        width: 50%;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
 
-        li {
-            color: $greyColor;
-            font-size: 16px;
-            margin-bottom: 8px;
-
-            &:before {
-                content: '▹';
-                color: $greyColor;
-                margin-right: 10px;
-            }
+        a:hover {
+            color: $blueColor;
         }
     }
 }
