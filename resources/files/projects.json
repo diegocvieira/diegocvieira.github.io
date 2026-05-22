@@ -11,6 +11,30 @@
         "company": "-----"
     },
     {
+        "title": "SeuSuper",
+        "description_en": "A web application for visualizing professionals and stores profiles, so than get in touch and schedule a service.",
+        "description_pt": "",
+        "image": "/resources/images/projects/seusuper.webp",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
+        "website": "",
+        "github": "https://github.com/diegocvieira/seu-super",
+        "release_year": 2020,
+        "featured": true,
+        "company": "-----"
+    },
+    {
+        "title": "Naslojas",
+        "description_en": "A web Application to the physical stores show their products. And to the users find and buy the best offers.",
+        "description_pt": "Aplicação web para as lojas físicas exibirem seus produtos. E para os usuários encontrarem e comprarem as melhores ofertas.",
+        "image": "/resources/images/projects/naslojas.webp",
+        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
+        "website": "",
+        "github": "https://github.com/diegocvieira/naslojas",
+        "release_year": 2020,
+        "featured": true,
+        "company": "-----"
+    },
+    {
         "title": "UCPel",
         "description": "Website of the Universidade Católica de Pelotas that I've developed while working at <a href='https://www.human2be.com.br' target='_blank'>Human2be</a>.",
         "image": "",
@@ -108,18 +132,6 @@
         "release_year": 2019,
         "featured": false,
         "company": "Human2be"
-    },
-    {
-        "title": "Naslojas",
-        "description_en": "A web Application to the physical stores show their products. And to the users find and buy the best offers.",
-        "description_pt": "Aplicação web para as lojas físicas exibirem seus produtos. E para os usuários encontrarem e comprarem as melhores ofertas.",
-        "image": "/resources/images/projects/naslojas.webp",
-        "stack": ["HTML", "SCSS", "JS", "jQuery", "PHP", "Laravel", "MySQL"],
-        "website": "",
-        "github": "https://github.com/diegocvieira/naslojas",
-        "release_year": 2020,
-        "featured": true,
-        "company": "-----"
     },
     {
         "title": "Infochat",

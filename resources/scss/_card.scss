@@ -102,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $desktop) {
     #load-jobs:has(.card:hover) .card:not(:hover),
     #projects:has(.card:hover) .card:not(:hover) {
         opacity: 1;

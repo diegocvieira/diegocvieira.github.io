@@ -1,6 +1,5 @@
 {
     "en": {
-        "header_role": "Senior Software Engineer",
         "nav_about": "ABOUT",
         "nav_experience": "EXPERIENCE",
         "nav_projects": "PROJECTS",
@@ -44,6 +43,9 @@
         "exp_naslojas_desc5": "Maintained and improved the platform over time, ensuring reliability, performance, and scalability as the product evolved.",
 
 
+        "projects_title": "PROJECTS",
+
+
         "view_all_projects": "View all projects",
         "archive_all_projects": "All Projects",
         "table_year": "Year",
@@ -52,7 +54,6 @@
         "table_built_with": "Built with"
     },
     "pt": {
-        "header_role": "Engenheiro de Software Sênior",
         "nav_about": "SOBRE",
         "nav_experience": "EXPERIÊNCIA",
         "nav_projects": "PROJETOS",
@@ -94,6 +95,9 @@
         "exp_naslojas_desc3": "Construí funcionalidades centrais para apoiar operações de lojas, gestão de produtos e fluxos de trabalho internos.",
         "exp_naslojas_desc4": "Implantei e gerenciei o ambiente de produção na DigitalOcean, incluindo configuração de servidores e deploy da aplicação.",
         "exp_naslojas_desc5": "Mantive e evoluí a plataforma ao longo do tempo, garantindo confiabilidade, desempenho e escalabilidade conforme o produto evoluía.",
+
+
+        "projects_title": "PROJETOS",
 
 
         "view_all_projects": "Ver todos os projetos",
